@@ -7,6 +7,8 @@
 @tailwind components;
 @tailwind utilities;
 
+/* TEMP FIX*/ 
+/* TODO: */
 h1 {
     font-family: 'Jersey 10', sans-serif;
 }
