@@ -10,6 +10,7 @@ module.exports = {
         normal: ['Montserrat', 'sans-serif'],  // For Regular weight (400)
         medium: ['Montserrat', 'sans-serif'],  // For Medium weight (500)
         semibold: ['Montserrat', 'sans-serif'],
+        jersey: ['Jersey 10', 'sans-serif'],
       },
     },
   },

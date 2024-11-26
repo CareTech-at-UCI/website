@@ -3,9 +3,9 @@ import React from 'react';
 const HeroSection: React.FC = () => {
   return (
     <section className="flex flex-col items-center text-left bg-gray-50 p-12">
-        <div className="flex flex-nowrap"> 
-            <h1 className="font-semibold text-5xl mr-4">Empowering early disease detection with innovative </h1>
-            <h1 className="font-bold text-5xl mr-4">tech </h1>
+        <div className="flex flex-nowrap space-x-4"> 
+            <h1 className="font-semibold text-5xl">Empowering early disease detection with innovative </h1>
+            <h1 className="font-jersey text-5xl mr-4">tech </h1>
             <h1 className="font-semibold text-5xl">solutions</h1>
         </div>     
         <p className="text-lg max-w-2xl">
