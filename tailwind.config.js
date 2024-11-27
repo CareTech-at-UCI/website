@@ -12,6 +12,9 @@ module.exports = {
         semibold: ['Montserrat', 'sans-serif'],
         jersey: ['Jersey 10', 'sans-serif'],
       },
+      colors: {
+        'sky-blue': '#BEEEFF',
+      },
     },
   },
   plugins: [],

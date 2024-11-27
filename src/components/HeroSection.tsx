@@ -23,7 +23,7 @@ const HeroSection: React.FC = () => {
           <p className="font-normal text-2xl mt-5">
               Student-led Organization at UCI dedicated to creating innovative healthcare apps and tech solutions that can transform the way we approach health.
           </p>
-          <button className="mt-10 px-10 py-5 bg-blue-500 text-white rounded-md hover:bg-blue-600">
+          <button className="mt-10 px-10 py-5 bg-sky-blue font-medium rounded-2xl hover:bg-[#d4f4ff]">
               Get Involved
           </button>
         </div>
