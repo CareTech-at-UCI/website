@@ -36,18 +36,26 @@ const Committees = () => {
 
   return (
     <div className="min-h-screen w-full bg-gradient-to-r from-black to-[#294B7B] p-8">
-      <h1 className="text-7xl mt-16 text-white text-center mb-8 font-jersey">
+      <h1 className="text-8xl mt-16 text-white text-center mb-8 font-jersey">
         Committees
       </h1>
-      <div className="grid font-montserrat grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 mx-auto place-items-center">
-        {committees.map((committee, index) => (
-          <CommitteeCard key={index} committee={committee} />
-        ))}
+      <div className="mx-auto px-4">
+        <div className="grid grid-rows-2">
+          <div className="flex flex-row flex-wrap justify-center gap-12">
+            {committees.slice(0, 3).map((committee, index) => (
+              <CommitteeCard key={index} committee={committee} />
+            ))}
+          </div>
+          <div className="flex flex-row flex-wrap justify-center gap-12">
+            {committees.slice(3).map((committee, index) => (
+              <CommitteeCard key={index} committee={committee} />
+            ))}
+          </div>
+        </div>
       </div>
     </div>
   );
 };
-export default Committees;
 
 const CommitteeCard = ({
   committee,
@@ -55,16 +63,17 @@ const CommitteeCard = ({
   committee: { icon: JSX.Element; name: string; description: string };
 }) => {
   return (
-    <div className="p-6 flex flex-row items-start max-w-lg">
+    <div className="p-16 flex flex-row items-start max-w-xl">
       <div className="mr-2">{committee.icon}</div>
-      <div className="flex flex-col text-2xl text-white">
-        <h2 className="mb-1 font-bold">{committee.name}</h2>
+      <div className="flex flex-col text-3xl text-white font-montserrat">
+        <h2 className="mb-2 font-bold">{committee.name}</h2>
         <p>{committee.description}</p>
       </div>
     </div>
   );
 };
 
+export default Committees;
 function Confetti({ className }: { className: string }) {
   return (
     <svg
