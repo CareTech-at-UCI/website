@@ -106,7 +106,7 @@ const Team = () => {
   const itemsPerRow = 5;
   return (
     <div className="min-h-screen w-full p-8">
-      <h1 className="text-8xl mt-16 text-center mb-8 font-jersey">
+      <h1 className="text-8xl mt-16 text-center mb-8 font-jersey text-[#183054]">
         Our Team
       </h1>
       <div className="mx-4 px-4">
@@ -115,7 +115,7 @@ const Team = () => {
             (_, rowIndex) => (
               <div
                 key={rowIndex}
-                className="flex flex-row flex-wrap justify-center gap-8"
+                className="flex flex-row flex-wrap justify-center gap-8 font-montserrat"
               >
                 {teamMembers
                   .slice(rowIndex * itemsPerRow, (rowIndex + 1) * itemsPerRow)
@@ -143,14 +143,18 @@ const TeamCard = ({ member }: { member: TeamMember }) => {
           className="object-cover"
         />
       </div>
-      <h2 className="text-2xl font-bold text-center">
+      <h2 className="text-2xl text-[#183054] font-extrabold text-center">
         {member.firstName}
       </h2>
-      <h2 className="text-2xl font-bold text-center mb-2">
+      <h2 className="text-2xl text-[#183054] font-extrabold text-center mb-2">
         {member.lastName}
       </h2>
-      <p className="text-xl text-center mb-1">{member.title}</p>
-      <p className="text-md text-center">{member.pronouns}</p>
+      <p className="text-xl text-[#294B7B] font-semibold text-center mb-1">
+        {member.title}
+      </p>
+      <p className="text-md text-[#294B7B] font-light text-center">
+        {member.pronouns}
+      </p>
     </div>
   );
 };
