@@ -36,17 +36,19 @@ const Committees = () => {
 
   return (
     <div className="min-h-screen w-full bg-gradient-to-r from-black to-[#294B7B] p-8">
-      <h1 className="text-8xl mt-16 text-white text-center mb-8 font-jersey">
+      <h1 className="text-6xl sm: text-8xl mt-16 text-white text-center mb-8 font-jersey">
         Committees
       </h1>
       <div className="mx-auto px-4">
         <div className="grid grid-rows-2">
-          <div className="flex flex-row flex-wrap justify-center gap-12">
+          <div className="grid grid-cols-3 gap-9"> 
+          {/* flex flex-row flex-wrap justify-center gap-12 */}
             {committees.slice(0, 3).map((committee, index) => (
               <CommitteeCard key={index} committee={committee} />
             ))}
           </div>
-          <div className="flex flex-row flex-wrap justify-center gap-12">
+          <div className="grid grid-cols-2 justify-center gap-9">
+          {/* flex flex-row flex-wrap justify-center gap-12 */}
             {committees.slice(3).map((committee, index) => (
               <CommitteeCard key={index} committee={committee} />
             ))}
@@ -63,9 +65,9 @@ const CommitteeCard = ({
   committee: { icon: JSX.Element; name: string; description: string };
 }) => {
   return (
-    <div className="p-16 flex flex-row items-start max-w-xl">
-      <div className="mr-2">{committee.icon}</div>
-      <div className="flex flex-col text-3xl text-white font-montserrat">
+    <div className="p-10 flex flex-row items-start max-w-xl">
+      <div className="mr-5">{committee.icon}</div>
+      <div className="flex flex-col text-xl sm:text-3xl text-white font-normal">
         <h2 className="mb-2 font-bold">{committee.name}</h2>
         <p>{committee.description}</p>
       </div>
@@ -79,7 +81,7 @@ function Confetti({ className }: { className: string }) {
     <svg
       width="49"
       height="49"
-      viewBox="0 0 49 49"
+      viewBox="0 0 48 49"
       className={className}
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

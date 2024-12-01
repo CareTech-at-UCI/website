@@ -115,7 +115,7 @@ const Team = () => {
             (_, rowIndex) => (
               <div
                 key={rowIndex}
-                className="flex flex-row flex-wrap justify-center gap-8 font-montserrat"
+                className="flex flex-row flex-wrap justify-center gap-8 font-normal"
               >
                 {teamMembers
                   .slice(rowIndex * itemsPerRow, (rowIndex + 1) * itemsPerRow)

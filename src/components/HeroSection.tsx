@@ -3,7 +3,7 @@ import React from 'react';
 const HeroSection: React.FC = () => {
   return (
     <section 
-    className="bg-cover bg-right bg-no-repeat h-screen flex flex-col items-start text-left p-12"
+    className="bg-[fffcf7] bg-cover bg-right bg-no-repeat h-screen flex flex-col items-start text-left p-12"
     style={{ 
       backgroundImage: "url('/images/dnastrand_bkg.png')",
       backgroundSize: "30%" }}
