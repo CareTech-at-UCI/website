@@ -1,4 +1,6 @@
 import React from 'react';
+import { FaDiscord, FaLinkedin, FaTree, FaInstagram, FaTiktok } from 'react-icons/fa'
+
 
 const Navbar: React.FC = () => {
     return (
@@ -20,6 +22,25 @@ const Navbar: React.FC = () => {
             <li>Join</li>
             <li>Contact</li>
           </ul>
+
+          <ul className="font-medium flex space-x-6 ml-auto">
+            <li>
+              <FaDiscord size={30} />
+            </li>
+            <li>
+              <FaLinkedin size={30} />
+            </li>
+            <li>
+              <FaTree size ={30} />
+            </li>
+            <li>
+              <FaInstagram size={30} />
+            </li>
+            <li>
+              <FaTiktok size={30} />
+            </li>
+          </ul>
+
         </nav>
       </header>
     );
