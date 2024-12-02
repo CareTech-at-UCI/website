@@ -2,7 +2,7 @@ import React from 'react';
 
 const AboutUs: React.FC = () => {
   return (
-    <section className="bg-gradient-to-r from-black to-[#294B7B] font-jersey p-12">
+    <section className="bg-gradient-to-r from-black to-[#294B7B] font-jersey p-12 h-[50vh]">
       <div className="mx-auto flex md:flex-row items-center justify-between gap-8">
         <div className="flex-col w-1/2">
           <h2 className="text-6xl font-bold mb-4 text-white">About Us</h2>
