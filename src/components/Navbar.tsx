@@ -14,7 +14,7 @@ const Navbar: React.FC = () => {
               <div className="ml-4 font-semibold text-sm md:text-lg lg:text-xl text-3xl">CareTech</div>
           </div>
           
-          <ul className="font-medium flex space-x-6 mx-auto">
+          <ul className="font-medium flex space-x-8 mx-auto">
             <li>About</li>
             <li>Projects</li>
             <li>Events</li>
@@ -23,7 +23,7 @@ const Navbar: React.FC = () => {
             <li>Contact</li>
           </ul>
 
-          <ul className="font-medium flex space-x-6 ml-auto">
+          <ul className="font-medium flex space-x-5">
             <li>
               <FaDiscord size={30} />
             </li>
