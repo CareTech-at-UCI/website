@@ -25,21 +25,32 @@ const Navbar: React.FC = () => {
 
           <ul className="font-medium flex space-x-5">
             <li>
-              <FaDiscord size={30} />
+              <a href="https://discord.gg/UZXpqynDzt" target="_blank" rel="noopener noreferrer">
+                <FaDiscord size={30} />
+              </a>
             </li>
             <li>
-              <FaLinkedin size={30} />
+              <a href="https://www.linkedin.com/company/caretech-uci/posts/?feedView=all" target="_blank" rel="noopener noreferrer">
+                <FaLinkedin size={30} />
+              </a>
             </li>
             <li>
-              <FaTree size ={30} />
+              <a href="#" rel="noopener noreferrer">
+                <FaTree size={30} />
+              </a>
             </li>
             <li>
-              <FaInstagram size={30} />
+              <a href="https://www.instagram.com/caretech_uci/?hl=en" target="_blank" rel="noopener noreferrer">
+                <FaInstagram size={30} />
+              </a>
             </li>
             <li>
-              <FaTiktok size={30} />
+              <a href="#" rel="noopener noreferrer">
+                <FaTiktok size={30} />
+              </a>
             </li>
           </ul>
+
 
         </nav>
       </header>
