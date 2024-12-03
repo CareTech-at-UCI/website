@@ -5,3 +5,7 @@ This project was bootstrapped with
 ### `TypeScript`
 ### `Tailwind CSS`
 
+
+
+## In order to run this here are some things you have to install
+### npm install react-icons
