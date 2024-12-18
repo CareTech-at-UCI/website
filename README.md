@@ -7,5 +7,4 @@ This project was bootstrapped with
 
 
 
-## In order to run this here are some things you have to install
-### npm install react-icons
+## Please look in the package.json for dependencies
