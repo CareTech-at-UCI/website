@@ -2,9 +2,9 @@ import React from 'react';
 
 const WhoWeAre: React.FC = () => {
   return (
-    <section className="bg-white font-jersey p-20 h-[80vh] flex justify-center">
+    <section className="bg-white font-jersey p-20 mt-12 h-[80vh] flex justify-center">
         <div className="flex-col">
-            <h2 className="text-6xl mb-4 text-center">Who Is CareTech?</h2>
+            <h2 className="text-6xl mb-6 text-center">Who Is CareTech?</h2>
             <div className="flex justify-between">
                 <p className="font-normal text-2xl text-[#294B7B] mb-6 mt-10 w-[42%]">
                 We are a student-led organization that will collaborate with industry-leading 

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { FaDiscord, FaLinkedin, FaTree, FaInstagram } from 'react-icons/fa'
 
 // Add FaTiktok to import if we ever make a TikTok
@@ -17,8 +18,12 @@ const Navbar: React.FC = () => {
           </div>
           
           <ul className="font-medium text-2xl flex space-x-8 mx-auto">
-            <li>Home</li>
-            <li>About</li>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/About">About Us</Link>
+            </li>
             <li>Projects</li>
             <li>Events</li>
             <li>Resources</li>
