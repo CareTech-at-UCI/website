@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const AboutUs: React.FC = () => {
   return (
@@ -11,12 +12,17 @@ const AboutUs: React.FC = () => {
             future of healthcare, we’re here to make a real difference.
             </p>
           <div className="flex mt-6 gap-2">
-            <button
-              className="font-normal text-2xl text-[#BEEEFF]"
+            <Link
+              to="/About"
+              className="font-normal text-2xl text-[#BEEEFF] flex items-center"
             >
               More
-            </button>
-            <img className='w-fit h-fit my-auto' src="/icons/lightblue_arrow.svg" alt="LightBlueArrowIcon"></img>
+              <img
+                className="w-fit h-fit ml-2"
+                src="/icons/lightblue_arrow.svg"
+                alt="LightBlueArrowIcon"
+              />
+            </Link>
           </div>
         </div>
         <div className="flex w-1/2">
