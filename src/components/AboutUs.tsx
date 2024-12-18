@@ -16,13 +16,14 @@ const AboutUs: React.FC = () => {
             >
               More
             </button>
-            <img className='w-fit h-fit my-auto' src="/icons/lightblue_arrow.svg"></img>
+            <img className='w-fit h-fit my-auto' src="/icons/lightblue_arrow.svg" alt="LightBlueArrowIcon"></img>
           </div>
         </div>
         <div className="flex w-1/2">
             <img 
             className="w-full"
-            src="/images/dna_bubbles.png"></img>
+            src="/images/dna_bubbles.png"
+            alt="DNABubbleImg"></img>
         </div>
       </div>
     </section>

@@ -1,5 +1,7 @@
 import React from 'react';
-import { FaDiscord, FaLinkedin, FaTree, FaInstagram, FaTiktok } from 'react-icons/fa'
+import { FaDiscord, FaLinkedin, FaTree, FaInstagram } from 'react-icons/fa'
+
+// Add FaTiktok to import if we ever make a TikTok
 
 
 const Navbar: React.FC = () => {
@@ -15,6 +17,7 @@ const Navbar: React.FC = () => {
           </div>
           
           <ul className="font-medium text-2xl flex space-x-8 mx-auto">
+            <li>Home</li>
             <li>About</li>
             <li>Projects</li>
             <li>Events</li>
@@ -44,11 +47,11 @@ const Navbar: React.FC = () => {
                 <FaInstagram size={30} />
               </a>
             </li>
-            <li>
+            {/* <li>
               <a href="#" rel="noopener noreferrer">
                 <FaTiktok size={30} />
               </a>
-            </li>
+            </li> */}
           </ul>
 
 
