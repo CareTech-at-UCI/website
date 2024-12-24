@@ -18,7 +18,7 @@ const DetectScroll = () => {
   return (
     <header
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
-        isScrolled ? "bg-white/30 backdrop-blur-md shadow-md" : "bg-transparent"
+        isScrolled ? "bg-white/30 backdrop-blur-md md:shadow-md" : "bg-white md:bg-transparent"
       }`}
     >
       <nav className="flex items-center justify-between px-8 py-9 text-white">

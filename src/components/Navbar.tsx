@@ -1,29 +1,28 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { FaDiscord, FaLinkedin, FaTree, FaInstagram } from 'react-icons/fa'
-
-// Add FaTiktok to import if we ever make a TikTok
-
+import { FaDiscord, FaLinkedin, FaTree, FaInstagram, FaBars, FaTimes } from 'react-icons/fa';
 
 const Navbar: React.FC = () => {
-    return (
-      <header 
-      id="navbar"
-      className="fixed top-0 left-0 w-full z-50 transition-all duration-300"
-      >
-        <nav className="relative flex items-center px-8 py-3 bg-transparent">
-          <div className="relative left-8 flex items-center">
-              <img src="/images/caretech_nobackg.png" alt="CareTech Logo" className="w-30 h-12"/>
-              <div className="ml-4 font-semibold text-sm md:text-lg lg:text-xl text-3xl">CareTech</div>
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  return (
+    <>
+      <header className="fixed top-0 left-0 z-50 w-full transition-all duration-300">
+        <nav className="flex items-center z-50 justify-between px-8 py-3 md:bg-transparent">
+          {/* Logo */}
+          <div className="flex items-center">
+            <img src="/images/caretech_nobackg.png" alt="CareTech Logo" className="w-30 h-12" />
+            <div className="ml-4 font-semibold text-sm md:text-lg lg:text-xl text-3xl">CareTech</div>
           </div>
-          
-          <ul className="font-medium text-2xl flex space-x-8 mx-auto">
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/About">About Us</Link>
-            </li>
+
+          {/* Center Menu Links */}
+          <ul className="hidden md:flex items-center space-x-6 font-medium text-2xl mx-auto">
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/About">About Us</Link></li>
             <li>Projects</li>
             <li>Events</li>
             <li>Resources</li>
@@ -31,38 +30,36 @@ const Navbar: React.FC = () => {
             <li>Contact</li>
           </ul>
 
-          <ul className="font-medium flex space-x-5">
-            <li>
-              <a href="https://discord.gg/UZXpqynDzt" target="_blank" rel="noopener noreferrer">
-                <FaDiscord size={30} />
-              </a>
-            </li>
-            <li>
-              <a href="https://www.linkedin.com/company/caretech-uci/posts/?feedView=all" target="_blank" rel="noopener noreferrer">
-                <FaLinkedin size={30} />
-              </a>
-            </li>
-            <li>
-              <a href="#" rel="noopener noreferrer">
-                <FaTree size={30} />
-              </a>
-            </li>
-            <li>
-              <a href="https://www.instagram.com/caretech_uci/?hl=en" target="_blank" rel="noopener noreferrer">
-                <FaInstagram size={30} />
-              </a>
-            </li>
-            {/* <li>
-              <a href="#" rel="noopener noreferrer">
-                <FaTiktok size={30} />
-              </a>
-            </li> */}
+          {/* Hamburger Icon */}
+          <div className="ml-auto md:hidden" onClick={toggleMenu}>
+            {isMenuOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
+          </div>
+
+          {/* Social Media Icons */}
+          <ul className="hidden md:flex items-center space-x-5 font-medium">
+            <li><a href="https://discord.gg/UZXpqynDzt" target="_blank" rel="noopener noreferrer"><FaDiscord size={30} /></a></li>
+            <li><a href="https://www.linkedin.com/company/caretech-uci/posts/?feedView=all" target="_blank" rel="noopener noreferrer"><FaLinkedin size={30} /></a></li>
+            <li><a href="#" rel="noopener noreferrer"><FaTree size={30} /></a></li>
+            <li><a href="https://www.instagram.com/caretech_uci/?hl=en" target="_blank" rel="noopener noreferrer"><FaInstagram size={30} /></a></li>
           </ul>
-
-
         </nav>
       </header>
-    );
-  };
-  
-  export default Navbar;
+
+      {/* Mobile Menu */}
+      <div className={`fixed flex flex-col items-center w-full z-10 left-0 bg-light-tan transition-transform ease-out duration-500
+        ${isMenuOpen ? 'transform translate-y-16' : 'transform -translate-y-96'}`}
+        ><ul className="py-5 space-y-5 text-[24px] font-medium">
+          <li><Link to="/">Home</Link></li>
+          <li><Link to="/About">About Us</Link></li>
+          <li>Projects</li>
+          <li>Events</li>
+          <li>Resources</li>
+          <li>Join</li>
+          <li>Contact</li>
+        </ul>
+      </div>
+    </>
+  );
+};
+
+export default Navbar;
