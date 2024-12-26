@@ -11,7 +11,7 @@ const HeroSection: React.FC = () => {
         <div className="max-w-screen-lg pt-20">
           <div className="flex items-center space-x-4 pt-12">
             <div className="w-12 border-t border-black" />
-            <h2 className="font-semibold text-2xl">CareTech At UCI.</h2>
+            <h2 className="font-semibold text-2xl">CareTech at UCI.</h2>
           </div>
           <div className="mt-5"> 
             <h1 className="font-semibold text-8xl pl=10px">
