@@ -36,7 +36,7 @@ const Committees = () => {
 
   return (
     <div className="min-h-screen w-full bg-gradient-to-r from-black to-[#294B7B] p-8">
-      <h1 className="text-6xl sm: text-8xl mt-16 text-white text-center mb-8 font-jersey">
+      <h1 className="text-6xl mt-16 text-white text-center mb-8 font-jersey">
         Committees
       </h1>
       <div className="mx-auto px-4">
