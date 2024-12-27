@@ -47,10 +47,17 @@ const Committees = () => {
               <CommitteeCard key={index} committee={committee} />
             ))}
           </div>
-          <div className="grid grid-cols-2 justify-center gap-9">
+          <div className="grid grid-cols-2 gap-9">
           {/* flex flex-row flex-wrap justify-center gap-12 */}
             {committees.slice(3).map((committee, index) => (
+              <div
+                key={index}
+                className={`${
+                  index === 0 ? "justify-self-end" : "justify-self-start"
+                }`}
+              >
               <CommitteeCard key={index} committee={committee} />
+              </div>
             ))}
           </div>
         </div>
