@@ -24,7 +24,7 @@ const Navbar: React.FC = () => {
             <li><Link to="/">Home</Link></li>
             <li><Link to="/About">About Us</Link></li>
             <li><Link to="/Projects">Projects</Link></li>
-            <li>Events</li>
+            <li><Link to="/Events">Events</Link></li>
             <li>Resources</li>
             <li>Join</li>
             <li>Contact</li>
@@ -49,10 +49,10 @@ const Navbar: React.FC = () => {
       <div className={`fixed md:hidden flex flex-col items-center w-full z-10 left-0 bg-light-tan transition-transform ease-out duration-500
         ${isMenuOpen ? 'transform translate-y-16' : 'transform -translate-y-96'}`}
         ><ul className="py-5 space-y-5 text-[24px] font-medium">
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/About">About Us</Link></li>
-          <li>Projects</li>
-          <li>Events</li>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/About">About Us</Link></li>
+            <li><Link to="/Projects">Projects</Link></li>
+            <li><Link to="/Events">Events</Link></li>
           <li>Resources</li>
           <li>Join</li>
           <li>Contact</li>
