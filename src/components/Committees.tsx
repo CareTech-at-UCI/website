@@ -36,7 +36,7 @@ const Committees = () => {
 
   return (
     <div className="min-h-screen w-full bg-gradient-to-r from-black to-[#294B7B] p-8">
-      <h1 className="text-6xl sm: text-8xl mt-16 text-white text-center mb-8 font-jersey">
+      <h1 className="sm:text-8xl mt-16 text-white text-center mb-8 font-jersey">
         Committees
       </h1>
       <div className="mx-auto px-4">
@@ -47,10 +47,17 @@ const Committees = () => {
               <CommitteeCard key={index} committee={committee} />
             ))}
           </div>
-          <div className="grid grid-cols-2 justify-center gap-9">
+          <div className="grid grid-cols-2 gap-9">
           {/* flex flex-row flex-wrap justify-center gap-12 */}
             {committees.slice(3).map((committee, index) => (
+              <div
+                key={index}
+                className={`${
+                  index === 0 ? "justify-self-end" : "justify-self-start"
+                }`}
+              >
               <CommitteeCard key={index} committee={committee} />
+              </div>
             ))}
           </div>
         </div>
