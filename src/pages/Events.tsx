@@ -29,7 +29,7 @@ const Events: React.FC = () => {
       <DetectScroll />
       <Navbar />
       <div className="min-h-screen w-full p-8">
-        <h1 className="text-8xl mt-16 text-center mb-8 font-jersey text-[#183054]">
+        <h1 className="text-8xl mt-16 md:pt-24 text-center mb-8 font-jersey text-[#183054]">
           Events
         </h1>
         <p className="text-center text-xl font-montserrat text-primary mb-8">
@@ -53,8 +53,8 @@ const Events: React.FC = () => {
             )}
           </div>
         </div>
-        <Footer />
       </div>
+      <Footer />
     </>
   );
 };
