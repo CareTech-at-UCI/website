@@ -40,9 +40,9 @@ function ContactUs() {
           ))}
         </div>
       </div>
-
       <Footer />
     </div>
+    // Maybe put the Footer here?
   );
 }
 
