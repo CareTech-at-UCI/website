@@ -33,14 +33,14 @@ const projects: Project[] = [
 
 function Projects() {
   return (
-    <div>
+    <>
       <DetectScroll />
       <Navbar />
-      <div className="text-center mt-28 mb-20 px-32">
-        <h1 className="text-4xl sm:text-6xl text-primary mb-8 font-jersey">
+      <div className="text-center pt-32">
+        <h1 className="text-6xl sm:text-8xl text-primary mb-8 font-jersey">
           Projects
         </h1>
-        <p className="text-secondary text-xl sm:text-2xl font-montserrat">
+        <p className="text-secondary p-8 text-xl sm:text-2xl font-montserrat">
           Members of CareTech get hands on experience developing innovative apps
           that improve patient care and transform the way we approach health.
         </p>
@@ -51,7 +51,7 @@ function Projects() {
         ))}
       </div>
       <Footer />
-    </div>
+    </>
   );
 }
 

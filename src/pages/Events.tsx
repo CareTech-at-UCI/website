@@ -54,6 +54,8 @@ const Events: React.FC = () => {
           </div>
         </div>
       </div>
+        <Footer />
+      </div>
       <Footer />
     </>
   );

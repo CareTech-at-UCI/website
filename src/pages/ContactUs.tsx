@@ -27,7 +27,7 @@ function ContactUs() {
     <div>
       <DetectScroll />
       <Navbar />
-      <div className="h-[80vh] w-full flex flex-col justify-center items-center">
+      <div className="h-[95vh] w-full flex flex-col justify-center items-center">
         <h1 className="text-6xl md:text-8xl font-jersey text-primary ">
           Contact Us
         </h1>
