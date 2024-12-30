@@ -55,8 +55,6 @@ const Events: React.FC = () => {
         </div>
       </div>
         <Footer />
-      </div>
-      <Footer />
     </>
   );
 };
