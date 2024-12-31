@@ -24,7 +24,7 @@ function ResourceCard({title, description, image, link, tags}: Resource ) {
             backgroundPosition: 'center'}}
         >
             <Link
-              to=""
+              to={link}
               className="font-normal text-lg md:text-2xl text-[#BEEEFF] flex items-center justify-end"
             >
               <img
