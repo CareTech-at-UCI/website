@@ -13,7 +13,7 @@ const resources: Resource[] = [
       description:
         "A UCI-backed research endeavor in which they aim to understand the needs of hospice patients, caregivers, and healthcare specialists.",
       image: "/images/placeholder-gray.png",
-      link: "https://www.google.com",
+      link: "",
       tags: [Tag.openSource],
     },
     {
@@ -21,7 +21,7 @@ const resources: Resource[] = [
       description:
         "The code underlying the Nobel-prize-winning tool for modelling protein structures can now be downloaded by academics.",
       image: "/images/placeholder-gray.png",
-      link: "https://www.google.com",
+      link: "",
       tags: [Tag.openSource, Tag.AI],
     },
     
