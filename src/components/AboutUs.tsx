@@ -1,5 +1,5 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 
 const AboutUs: React.FC = () => {
   return (
@@ -7,10 +7,11 @@ const AboutUs: React.FC = () => {
       <div className="mx-auto flex md:flex-row items-center justify-between gap-8">
         <div className="flex-col w-1/2">
           <h2 className="text-6xl font-bold mb-4 text-white">About Us</h2>
-            <p className="font-normal text-2xl text-white">
-            From developing apps that improve patient care to partnering with companies shaping the 
-            future of healthcare, we’re here to make a real difference.
-            </p>
+          <p className="font-normal text-2xl text-white">
+            From developing apps that improve patient care to partnering with
+            companies shaping the future of healthcare, we&apos;re here to make
+            a real difference.
+          </p>
           <div className="flex mt-6 gap-2">
             <Link
               to="/About"
@@ -26,10 +27,11 @@ const AboutUs: React.FC = () => {
           </div>
         </div>
         <div className="flex w-1/2">
-            <img 
+          <img
             className="w-full"
             src="/images/dna_bubbles.png"
-            alt="DNABubbleImg"></img>
+            alt="DNABubbleImg"
+          ></img>
         </div>
       </div>
     </section>

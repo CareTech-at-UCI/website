@@ -14,7 +14,7 @@ const Events: React.FC = () => {
             >
             View All Events
             </button>
-            <img className='w-fit h-fit my-auto' src="/icons/blue_arrow.svg"></img>
+            <img className='w-fit h-fit my-auto' src="/icons/blue_arrow.svg" alt="blue arrow"></img>
         </div>
       </div>
     </section>

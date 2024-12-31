@@ -16,22 +16,22 @@ const Navbar: React.FC = () => {
           {/* Logo */}
           <div className="flex items-center">
             <img src="/images/caretech_nobackg.png" alt="CareTech Logo" className="w-30 h-12" />
-            <div className="ml-4 font-semibold text-sm md:text-lg lg:text-xl text-3xl">CareTech</div>
+            <div className="ml-4 font-semibold md:text-lg lg:text-xl text-3xl">CareTech</div>
           </div>
 
           {/* Center Menu Links */}
           <ul className="hidden md:flex items-center space-x-6 font-medium text-2xl mx-auto">
             <li><Link to="/">Home</Link></li>
             <li><Link to="/About">About Us</Link></li>
-            <li>Projects</li>
-            <li>Events</li>
+            <li><Link to="/Projects">Projects</Link></li>
+            <li><Link to="/Events">Events</Link></li>
             <li>Resources</li>
             <li>Join</li>
-            <li>Contact</li>
+            <li><Link to="/ContactUs">Contact</Link></li>
           </ul>
 
           {/* Hamburger Icon */}
-          <div className="ml-auto md:hidden" onClick={toggleMenu}>
+          <div className="ml-auto md:hidden flex" onClick={toggleMenu}>
             {isMenuOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
           </div>
 
@@ -46,16 +46,16 @@ const Navbar: React.FC = () => {
       </header>
 
       {/* Mobile Menu */}
-      <div className={`fixed flex flex-col items-center w-full z-10 left-0 bg-light-tan transition-transform ease-out duration-500
+      <div className={`fixed md:hidden flex flex-col items-center w-full z-10 left-0 bg-light-tan transition-transform ease-out duration-500
         ${isMenuOpen ? 'transform translate-y-16' : 'transform -translate-y-96'}`}
         ><ul className="py-5 space-y-5 text-[24px] font-medium">
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/About">About Us</Link></li>
-          <li>Projects</li>
-          <li>Events</li>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/About">About Us</Link></li>
+            <li><Link to="/Projects">Projects</Link></li>
+            <li><Link to="/Events">Events</Link></li>
           <li>Resources</li>
           <li>Join</li>
-          <li>Contact</li>
+          <li><Link to="/ContactUs">Contact</Link></li>
         </ul>
       </div>
     </>
