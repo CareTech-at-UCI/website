@@ -41,8 +41,8 @@ const Committees = () => {
       </h1>
       <div className="mx-auto px-4">
         <div className="grid grid-rows-2">
-          <div className="grid grid-cols-3 gap-9"> 
-          {/* flex flex-row flex-wrap justify-center gap-12 */}
+          <div className="grid grid-cols-3 gap-9">
+            {/* flex flex-row flex-wrap justify-center gap-12 */}
             {committees.slice(0, 3).map((committee, index) => (
               <CommitteeCard key={index} committee={committee} />
             ))}

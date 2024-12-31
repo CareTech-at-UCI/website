@@ -15,3 +15,11 @@
 .font-montserrat {
     font-family: 'Montserrat', sans-serif;
 }
+
+.text-primary {
+    color: #183054;
+}
+.text-secondary {
+    color: #294B7B;
+}
+
