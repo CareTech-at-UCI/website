@@ -4,6 +4,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Projects from './pages/Projects';
 import Events from './pages/Events';
+import Resources from './pages/Resources';
 import ContactUs from './pages/ContactUs';
 
 const App: React.FC = () => {
@@ -14,6 +15,7 @@ const App: React.FC = () => {
         <Route path="/About" element={<About />} />
         <Route path="/Projects" element={<Projects />} />
         <Route path="/Events" element={<Events />} />
+        <Route path="/Resources" element={<Resources />} />
         <Route path="/ContactUs" element={<ContactUs/>} />
       </Routes>
     </Router>
