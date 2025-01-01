@@ -40,26 +40,24 @@ const Committees = () => {
         Committees
       </h1>
       <div className="mx-auto px-4">
-        <div className="grid grid-rows-2">
-          <div className="grid grid-cols-3 gap-9">
-            {/* flex flex-row flex-wrap justify-center gap-12 */}
-            {committees.slice(0, 3).map((committee, index) => (
+        <div className="flex flex-row flex-wrap justify-center gap-12">
+          {/*  */}
+          {committees.slice(0, 3).map((committee, index) => (
+            <CommitteeCard key={index} committee={committee} />
+          ))}
+        </div>
+        <div className="flex flex-row flex-wrap justify-center gap-12">
+          {/*  */}
+          {committees.slice(3).map((committee, index) => (
+            <div
+              key={index}
+              className={`${
+                index === 0 ? "justify-self-end" : "justify-self-start"
+              }`}
+            >
               <CommitteeCard key={index} committee={committee} />
-            ))}
-          </div>
-          <div className="grid grid-cols-2 gap-9">
-          {/* flex flex-row flex-wrap justify-center gap-12 */}
-            {committees.slice(3).map((committee, index) => (
-              <div
-                key={index}
-                className={`${
-                  index === 0 ? "justify-self-end" : "justify-self-start"
-                }`}
-              >
-              <CommitteeCard key={index} committee={committee} />
-              </div>
-            ))}
-          </div>
+            </div>
+          ))}
         </div>
       </div>
     </div>
