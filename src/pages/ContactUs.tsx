@@ -24,25 +24,26 @@ function ContactUs() {
     },
   ];
   return (
-    <div>
+    <>
       <DetectScroll />
       <Navbar />
-      <div className="h-[95vh] w-full flex flex-col justify-center items-center">
-        <h1 className="text-6xl md:text-8xl font-jersey text-primary ">
-          Contact Us
-        </h1>
-        <div className="bg-[#BEEEFF] font-montserrat text-xl py-4 md:px-20 md:py-4 md:text-2xl px-12 text-primary rounded-full mt-4">
-          <a href="mailto:caretechirvine@gmail.com">caretechirvine@gmail.com</a>
+      <div>
+        <div className="h-svh w-full flex flex-col justify-center items-center sm: pt-52 md:pt-9">
+          <h1 className="text-6xl md:text-8xl font-jersey text-primary mb-4">
+            Contact Us
+          </h1>
+          <div className="bg-[#BEEEFF] font-montserrat text-xl py-4 md:px-20 md:py-4 md:text-2xl px-6 text-primary rounded-full">
+            <a href="mailto:caretechirvine@gmail.com">caretechirvine@gmail.com</a>
+          </div>
+          <div className="flex flex-col md:flex-row justify-evenly items-center gap-8 p-8">
+            {socials.map((social) => (
+              <Social key={social.name} {...social} />
+            ))}
+          </div>
         </div>
-        <div className="flex flex-col md:flex-row justify-evenly items-center gap-8 p-8">
-          {socials.map((social) => (
-            <Social key={social.name} {...social} />
-          ))}
-        </div>
+        <Footer />
       </div>
-      <Footer />
-    </div>
-    // Maybe put the Footer here?
+      </>
   );
 }
 
