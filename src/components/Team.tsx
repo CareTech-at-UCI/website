@@ -103,13 +103,13 @@ const Team = () => {
     },
   ];
 
-  const itemsPerRow = 5;
+  const itemsPerRow = 1000000;
   return (
     <div className="min-h-screen w-full p-8">
-      <h1 className="text-6xl md:text-8xl mt-16 justify-center text-center font-jersey text-[#183054]">
+      <h1 className="text-6xl md:text-8xl mt-4 sm:mt-16 sm:mb-8 justify-center text-center font-jersey text-[#183054]">
         Our Team
       </h1>
-      <div className="flex flex-wrap justify-center gap-8 mt-8">
+      <div className="flex flex-wrap justify-center gap-8">
           {Array.from(Array(Math.ceil(teamMembers.length / itemsPerRow))).map(
             (_, rowIndex) => (
               <div

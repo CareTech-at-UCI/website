@@ -35,18 +35,18 @@ const Committees = () => {
   ];
 
   return (
-    <div className="min-h-screen w-full bg-gradient-to-r from-black to-[#294B7B] p-8">
-      <h1 className="text-6xl md:text-8xl mt-16 text-white text-center mb-8 font-jersey">
+    <div className="min-h-screen w-full bg-gradient-to-r from-black to-[#294B7B] p-4 sm:p-8">
+      <h1 className="text-6xl md:text-8xl mt-4 sm:mt-16 text-white text-center sm:mb-8 font-jersey">
         Committees
       </h1>
       <div className="mx-auto px-4">
-        <div className="flex flex-row flex-wrap justify-center gap-1">
+        <div className="flex flex-row flex-wrap lg:flex-nowrap justify-center gap-3">
           {/*  */}
           {committees.slice(0, 3).map((committee, index) => (
             <CommitteeCard key={index} committee={committee} />
           ))}
         </div>
-        <div className="flex flex-row flex-wrap justify-center gap-12">
+        <div className="flex flex-row flex-wrap lg:flex-nowrap justify-center gap-3">
           {/*  */}
           {committees.slice(3).map((committee, index) => (
             <div
@@ -70,11 +70,11 @@ const CommitteeCard = ({
   committee: { icon: JSX.Element; name: string; description: string };
 }) => {
   return (
-    <div className="p-10 flex flex-row items-start max-w-xl">
-      <div className="mr-4">{committee.icon}</div>
-      <div className="flex flex-col text-xl sm:text-3xl text-white font-normal">
-        <h2 className="mb-2 font-bold">{committee.name}</h2>
-        <p>{committee.description}</p>
+    <div className="p-4 sm:p-10 flex-col sm:flex sm:flex-row justify-items-center sm:items-start max-w-xl">
+      <div className="mb-2 sm:mr-4">{committee.icon}</div>
+      <div className="flex flex-col sm:text-3xl text-white font-normal text-center sm:text-left">
+        <h2 className="mb-2 text-xl sm:text-3xl font-bold">{committee.name}</h2>
+        <p className="text-base sm:text-3xl">{committee.description}</p>
       </div>
     </div>
   );

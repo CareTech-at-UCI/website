@@ -32,7 +32,7 @@ function Resources() {
       <>
         <DetectScroll />
         <Navbar />
-        <div className="text-center pt-32">
+        <div className="text-center pt-20">
           <h1 className="text-6xl sm:text-8xl text-primary font-jersey">
             Resources
           </h1>
