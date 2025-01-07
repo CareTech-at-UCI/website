@@ -37,7 +37,7 @@ function Projects() {
       <DetectScroll />
       <Navbar />
       <div className="text-center pt-32">
-        <h1 className="text-6xl sm:text-8xl text-primary mb-8 font-jersey">
+        <h1 className="text-6xl sm:text-8xl text-primary sm:mb-8 font-jersey">
           Projects
         </h1>
         <p className="text-secondary p-8 text-xl sm:text-2xl font-montserrat">

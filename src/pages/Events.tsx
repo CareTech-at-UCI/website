@@ -29,13 +29,13 @@ const Events: React.FC = () => {
       <DetectScroll />
       <Navbar />
       <div className="min-h-screen w-full p-8">
-        <h1 className="text-8xl mt-16 md:pt-24 text-center mb-8 font-jersey text-[#183054]">
+        <h1 className="text-6xl sm:text-8xl mt-16 md:pt-24 text-center mb-4 sm:mb-8 font-jersey text-[#183054]">
           Events
         </h1>
-        <p className="text-center text-xl font-montserrat text-primary mb-8">
+        <p className="text-center text-xl sm:text-2xl font-montserrat text-primary sm:m-8">
           We host meetings in <strong>[Location]</strong> at <strong>[time and day]</strong>! Meeting and event updates will be posted on Discord and Instagram, so be sure to follow us!
         </p>
-        <div className="mx-4 px-4">
+        <div className="mx-4 px-4 justify-items-center">
           <div className="grid grid-rows-auto gap-y-16 gap-x">
             {Array.from(Array(Math.ceil(events.length / itemsPerRow))).map(
               (_, rowIndex) => (

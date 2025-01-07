@@ -14,7 +14,7 @@ const HeroSection: React.FC = () => {
           <div className="mt-3 md:mt-5"> 
             <h1 className="font-semibold text-4xl md:text-8xl text-center md:text-left">
             Empowering early disease detection with innovative{' '}
-              <span className="font-jersey text-4xl md:text-8xl">tech </span>
+              <span className="font-jersey text-5xl md:text-8xl">tech </span>
               <span className="font-semibold text-4xl md:text-8xl">solutions</span>
             </h1>
           </div>     
