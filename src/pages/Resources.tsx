@@ -12,16 +12,16 @@ const resources: Resource[] = [
       title: "Ojos Project",
       description:
         "A UCI-backed research endeavor in which they aim to understand the needs of hospice patients, caregivers, and healthcare specialists.",
-      image: "/images/placeholder-gray.png",
-      link: "",
+      image: "/images/ojos_opensource.png",
+      link: "https://ojosproject.org/",
       tags: [Tag.openSource],
     },
     {
       title: "AlphaFold3",
       description:
         "The code underlying the Nobel-prize-winning tool for modelling protein structures can now be downloaded by academics.",
-      image: "/images/placeholder-gray.png",
-      link: "",
+      image: "/images/alpha3.png",
+      link: "https://www.nature.com/articles/d41586-024-03708-4?utm_source=tldrai",
       tags: [Tag.openSource, Tag.AI],
     },
     
