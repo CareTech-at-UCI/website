@@ -24,7 +24,7 @@ const WhoWeAre: React.FC = () => {
           </p>
           <img
             className="flex-1 m-3 md:m-8 mx-auto"
-            src="/images/caretech_nobackg.png"
+            src="/images/caretech_logo.png"
             alt="CareTechAnimal"
           ></img>
         </div>
