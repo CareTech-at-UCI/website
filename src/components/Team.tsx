@@ -69,7 +69,7 @@ const Team = () => {
     {
       image: "/images/committee_heads/elaine_johann_outreach.jpeg",
       firstName: "Elaine",
-      lastName: "Johann",
+      lastName: "Zhu",
       title: "Outreach Head",
       pronouns: "she/her",
     },
