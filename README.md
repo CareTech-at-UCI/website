@@ -1,10 +1,8 @@
 # Welcome to CareTech @ UCI Website
 
-This project was bootstrapped with
+For this website we constructed it with, 
 ### `React`
 ### `TypeScript`
 ### `Tailwind CSS`
 
-
-
-## Please look in the package.json for dependencies
+Thank you to the Developers and Designers that contributed to this work.
