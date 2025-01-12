@@ -4,7 +4,7 @@ const WhoWeAre: React.FC = () => {
   return (
     <section className="bg-white font-jersey p-6 pt-12 mb-11 justify-center">
       <div className="flex-col">
-        <h2 className="text-6xl sm:text-8xl mt-8 sm:pt-20 md:pt-20 pb-2 text-center text-primary">What Is CareTech?</h2>
+        <h2 className="text-6xl sm:text-8xl mt-8 sm:pt-20 md:pt-14 pb-2 text-center text-primary">What Is CareTech?</h2>
         <div className="flex justify-between flex-wrap flex-col lg:flex-row">
           <p className="font-normal text-lg sm:text-2xl text-[#294B7B] flex-1 w-full m-auto">
             We are a student-led organization that will collaborate with
