@@ -11,7 +11,7 @@ const projects: Project[] = [
       "Want to learn more about how this website was made? Check it on our github! This website was made by the Tech Committee.",
     image: "/images/caretech_logo.png",
     link: "https://github.com/CareTech-at-UCI/website",
-    tags: [Tag.closedSource],
+    tags: [Tag.openSource],
   },
   {
     title: "AI Melanoma Detection System",
