@@ -8,26 +8,18 @@ const projects: Project[] = [
   {
     title: "CareTech Website",
     description:
-      "A description of the project. Not sure if we should add the website to it but it is up to you all. If we do, we have to write a legitimate description.",
+      "Want to learn more about how this website was made? Check it on our github! This website was made by the Tech Committee.",
     image: "/images/caretech_logo.png",
-    link: "https://www.google.com",
+    link: "https://github.com/CareTech-at-UCI/website",
     tags: [Tag.closedSource],
   },
   {
-    title: "Cancer Cure",
+    title: "AI Melanoma Detection System",
     description:
-      "A description of the project. Not sure if we should add the website to it but it is up to you all. If we do, we have to write a legitimate description.",
+      "This project is based off a research paper where we will build a machine learning model and a user-friendly interface. The user will input images and the model will predict the detect the chances of it being melanoma. The Tech Committee will work on this project until the end of the 2025 academic year.",
     image: "/images/dna_bubbles.png",
     link: "https://www.google.com",
     tags: [Tag.openSource, Tag.AI],
-  },
-  {
-    title: "CareTech Website",
-    description:
-      "A description of the project. Not sure if we should add the website to it but it is up to you all. If we do, we have to write a legitimate description.",
-    image: "/images/caretech_logo.png",
-    link: "https://www.google.com",
-    tags: [Tag.closedSource],
   },
 ];
 
