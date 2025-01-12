@@ -39,7 +39,7 @@ function Resources() {
           <p className="text-secondary p-8 text-xl sm:text-2xl font-montserrat">
             Check out our {" "}
             <Link
-                to=""
+                to="/ContactUs"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-[#0097FC] font-bold"
