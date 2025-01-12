@@ -22,10 +22,12 @@ const HeroSection: React.FC = () => {
               Student-led Organization at UCI dedicated to creating innovative healthcare apps and tech solutions that can transform the way we approach health.
           </p>
           
-            <button className="flex mt-6 md:mt-11 px-6 md:px-10 py-3 md:py-5 bg-sky-blue font-medium text-lg md:text-3xl rounded-3xl hover:bg-[#d4f4ff] justify-self-center md:justify-self-start">
-                Get Involved
+            <a href="https://forms.gle/D1A8HV1b5PaKr8MJ7" target="_blank" rel="noopener noreferrer">
+              <button className="flex mt-6 md:mt-11 px-6 md:px-10 py-3 md:py-5 bg-sky-blue font-medium text-lg md:text-3xl rounded-3xl hover:bg-[#d4f4ff] justify-self-center md:justify-self-start">
+                Committee Application
                 <img className='w-6 md:w-fit h-fit my-auto pl-2' src="/icons/black_arrow.svg" alt="Arrow"></img>
-            </button>
+              </button>
+            </a>
           
         </div>
     </section>
