@@ -28,7 +28,7 @@ const Team = () => {
       image: "/images/committee_heads/isaac_zhang_vp.jpg",
       firstName: "Isaac",
       lastName: "Zhang",
-      title: "Co-President",
+      title: "Vice President",
       pronouns: "he/him",
     },
     {
