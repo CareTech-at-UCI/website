@@ -6,7 +6,7 @@ function ContactUs() {
   const socials = [
     {
       svg: "/icons/discord.svg",
-      link: "https://discord.gg/",
+      link: "https://discord.gg/UZXpqynDzt",
       name: "Discord",
       social: "CareTech@UCI",
     },
@@ -18,7 +18,7 @@ function ContactUs() {
     },
     {
       svg: "/icons/linkedin.svg",
-      link: "https://www.linkedin.com/company/",
+      link: "https://www.linkedin.com/company/caretech-uci/posts/?feedView=all",
       name: "LinkedIn",
       social: "UCI CareTech",
     },
