@@ -4,25 +4,25 @@ import DetectScroll from "../components/DetectScroll";
 import Navbar from "../components/Navbar";
 
 const Events: React.FC = () => {
-  const events: Event[] = [
-    {
-      image: "/images/placeholder-gray.png",
-      name: "Event 1",
-      location: "Location 1",
-      date: new Date(),
-      description: "Description for Event 1",
-    },
-    {
-      image: "/images/placeholder-gray.png",
-      name: "Event 2",
-      location: "Location 2",
-      date: new Date(),
-      description: "Description for Event 2",
-    },
-    // Add more events as needed
-  ];
+  // const events: Event[] = [
+  //   {
+  //     image: "/images/placeholder-gray.png",
+  //     name: "Event 1",
+  //     location: "Location 1",
+  //     date: new Date(),
+  //     description: "Description for Event 1",
+  //   },
+  //   {
+  //     image: "/images/placeholder-gray.png",
+  //     name: "Event 2",
+  //     location: "Location 2",
+  //     date: new Date(),
+  //     description: "Description for Event 2",
+  //   },
+  //   // Add more events as needed
+  // ];
 
-  const itemsPerRow = 5;
+  // const itemsPerRow = 5;
 
   return (
     <>
@@ -33,26 +33,10 @@ const Events: React.FC = () => {
           Events
         </h1>
         <p className="text-center text-xl sm:text-2xl font-montserrat text-primary sm:m-8">
-          We host meetings in <strong>[Location]</strong> at <strong>[time and day]</strong>! Meeting and event updates will be posted on Discord and Instagram, so be sure to follow us!
+          We host meetings in <strong>ISEB</strong> on <strong>Tuesdays 6:00-7:00PM</strong>! Meeting and event updates will be posted on Discord and Instagram, so be sure to follow us!
         </p>
-        <div className="mx-4 px-4 justify-items-center">
-          <div className="grid grid-rows-auto gap-y-16 gap-x">
-            {Array.from(Array(Math.ceil(events.length / itemsPerRow))).map(
-              (_, rowIndex) => (
-                <div
-                  key={rowIndex}
-                  className="flex flex-row flex-wrap justify-center gap-8 font-normal"
-                >
-                  {events
-                    .slice(rowIndex * itemsPerRow, (rowIndex + 1) * itemsPerRow)
-                    .map((event, index) => (
-                      <Event key={index} event={event} />
-                    ))}
-                </div>
-              )
-            )}
-          </div>
-        </div>
+        <p className="text-center text-xl sm:text-2xl font-montserrat text-primary sm:m-8">No events so far! Check in later.</p>
+        {/* PUT COMMENTED CODE AT BOTTOM WHEN EVENTS BEGIN/IF WE STILL USE THIS BESIDES CALENDAR */}
       </div>
         <Footer />
     </>
@@ -94,3 +78,22 @@ interface Event {
   date: Date;
   description: string;
 }
+
+// {/* <div className="mx-4 px-4 justify-items-center">
+//   <div className="grid grid-rows-auto gap-y-16 gap-x">
+//     {Array.from(Array(Math.ceil(events.length / itemsPerRow))).map(
+//       (_, rowIndex) => (
+//         <div
+//           key={rowIndex}
+//           className="flex flex-row flex-wrap justify-center gap-8 font-normal"
+//         >
+//           {events
+//             .slice(rowIndex * itemsPerRow, (rowIndex + 1) * itemsPerRow)
+//             .map((event, index) => (
+//               <Event key={index} event={event} />
+//             ))}
+//         </div>
+//       )
+//     )}
+//   </div> */}
+// {/* </div> */}
