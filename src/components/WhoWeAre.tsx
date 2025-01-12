@@ -4,9 +4,9 @@ const WhoWeAre: React.FC = () => {
   return (
     <section className="bg-white font-jersey p-6 pt-12 mb-11 justify-center">
       <div className="flex-col">
-        <h2 className="text-6xl sm:text-8xl mt-8 pb-7 text-center text-primary">What Is CareTech?</h2>
+        <h2 className="text-6xl sm:text-8xl mt-8 sm:pt-20 md:pt-20 pb-2 text-center text-primary">What Is CareTech?</h2>
         <div className="flex justify-between flex-wrap flex-col lg:flex-row">
-          <p className="font-normal text-lg sm:text-2xl text-[#294B7B] text-center flex-1 w-full m-auto">
+          <p className="font-normal text-lg sm:text-2xl text-[#294B7B] flex-1 w-full m-auto">
             We are a student-led organization that will collaborate with
             industry-leading companies to{" "}
             <b>bring groundbreaking healthcare inventions to life</b>, get{" "}
@@ -24,8 +24,8 @@ const WhoWeAre: React.FC = () => {
           </p>
           <img
             className="flex-1 m-3 md:m-8 mx-auto"
-            src="https://placehold.co/600x330?text=Amazing+Image"
-            alt="AmazingImage"
+            src="/images/caretech_nobackg.png"
+            alt="CareTechAnimal"
           ></img>
         </div>
       </div>
