@@ -11,7 +11,7 @@ interface TeamMember {
 const Team = () => {
   const teamMembers: TeamMember[] = [
     {
-      image: "/images/caretech_logo.png",
+      image: "/images/committee_heads/aanya_agrawal_copres.png",
       firstName: "Aanya",
       lastName: "Agrawal",
       title: "Co-President",
