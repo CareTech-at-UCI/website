@@ -8,7 +8,7 @@ const Events: React.FC = () => {
        <div className="flex-col">
         <h2 className="text-5xl md:text-6xl mb-2 md:mb-4 text-center">Events</h2>
         <p className="font-normal text-sm md:text-2xl text-[#294B7B] mb-2 md:mb-6 text-center">
-          We host events in ISEB at Tuesdays 6:00-7:00PM!
+          We host events in DBH 4011 at Tuesdays 6:00-7:00PM!
         </p>
         <div className="flex justify-center mb-32">
             <Link
