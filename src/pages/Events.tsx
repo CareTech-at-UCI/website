@@ -33,7 +33,7 @@ const Events: React.FC = () => {
           Events
         </h1>
         <p className="text-center text-xl sm:text-2xl font-montserrat text-primary sm:m-8">
-          We host meetings in <strong>ISEB</strong> on <strong>Tuesdays 6:00-7:00PM</strong>! Meeting and event updates will be posted on Discord and Instagram, so be sure to follow us!
+          We host meetings in <strong>DBH 4011</strong> on <strong>Tuesdays 6:00-7:00PM</strong>! Meeting and event updates will be posted on Discord and Instagram, so be sure to follow us!
         </p>
         <p className="text-center text-xl sm:text-2xl font-montserrat text-primary sm:m-8">No events so far! Check in later.</p>
         {/* PUT COMMENTED CODE AT BOTTOM WHEN EVENTS BEGIN/IF WE STILL USE THIS BESIDES CALENDAR */}
