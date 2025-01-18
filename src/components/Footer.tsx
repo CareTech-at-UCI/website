@@ -36,7 +36,7 @@ const Footer: React.FC = () => {
           </li>
           <li>
             <a
-              href="#"
+              href="https://linktr.ee/caretechuci"
               rel="noopener noreferrer"
               className="hover:opacity-80 transition-opacity"
             >

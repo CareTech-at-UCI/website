@@ -39,7 +39,7 @@ const Navbar: React.FC = () => {
           <ul className="hidden xl:flex items-center space-x-5 font-medium">
             <li><a href="https://discord.gg/UZXpqynDzt" target="_blank" rel="noopener noreferrer"><FaDiscord size={30} /></a></li>
             <li><a href="https://www.linkedin.com/company/caretech-uci/posts/?feedView=all" target="_blank" rel="noopener noreferrer"><FaLinkedin size={30} /></a></li>
-            <li><a href="#" rel="noopener noreferrer"><FaTree size={30} /></a></li>
+            <li><a href="https://linktr.ee/caretechuci" rel="noopener noreferrer"><FaTree size={30} /></a></li>
             <li><a href="https://www.instagram.com/caretech_uci/?hl=en" target="_blank" rel="noopener noreferrer"><FaInstagram size={30} /></a></li>
           </ul>
         </nav>
