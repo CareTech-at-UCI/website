@@ -11,7 +11,7 @@ const resources: Resource[] = [
     {
       title: "Ojos Project",
       description:
-        "A UCI-backed research endeavor in which they aim to understand the needs of hospice patients, caregivers, and healthcare specialists.",
+        "A UCI-backend research endeavor in which they aim to understand the needs of hospice patients, caregivers, and healthcare specialists.",
       image: "/images/ojos_opensource.png",
       link: "https://ojosproject.org/",
       tags: [Tag.openSource],
@@ -39,7 +39,7 @@ function Resources() {
           <p className="text-secondary p-8 text-xl sm:text-2xl font-montserrat">
             Check out our {" "}
             <Link
-                to=""
+                to="https://linktr.ee/caretechuci"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-[#0097FC] font-bold"
