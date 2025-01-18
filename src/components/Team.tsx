@@ -74,6 +74,13 @@ const Team = () => {
       pronouns: "she/her",
     },
     {
+      image: "/images/committee_heads/zarin_hasan_event.jpg",
+      firstName: "Zarin",
+      lastName: "Hasan",
+      title: "Outreach Head",
+      pronouns: "she/her",
+    },
+    {
       image: "/images/committee_heads/andy_xie_project.jpg",
       firstName: "Andy",
       lastName: "Xie",
