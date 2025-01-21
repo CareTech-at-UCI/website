@@ -54,7 +54,7 @@ const Navbar: React.FC = () => {
             <li><Link to="/Projects">Projects</Link></li>
             <li><Link to="/Events">Events</Link></li>
             <li><Link to="/Resources">Resources</Link></li>
-            <li>Join</li>
+            {/* <li>Join</li> */}
             <li><Link to="/ContactUs">Contact</Link></li>
         </ul>
       </div>
