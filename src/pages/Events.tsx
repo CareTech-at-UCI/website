@@ -107,7 +107,7 @@ const Events: React.FC = () => {
           </div>
         </div>
 
-        <hr className="w-full md:w-3/4 mt-1 md:mt-0 border border-black mx-auto" />
+        <hr className="w-full md:w-3/4 mt-2 md:mt-0 border border-black mx-auto" />
 
         {/* TODO: Make sure to implement EventList and EventCalendar */}
         {viewMode === "list" ? <EventCard /> : <div></div>}
