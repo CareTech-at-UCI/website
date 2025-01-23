@@ -43,8 +43,8 @@ const Events: React.FC = () => {
 
   const handlePrevMonth = () => {
     setDate((prevDate) => {
-      const newMonth = prevDate.month === 0 ? 11 : prevDate.month - 1;
-      const newYear = prevDate.month === 0 ? prevDate.year - 1 : prevDate.year;
+      const newMonth = prevDate.month === 0 ? 11 : prevDate.month - 1; // if month is january it goes to december
+      const newYear = prevDate.month === 0 ? prevDate.year - 1 : prevDate.year; // if month is january it decrements the year
       return { month: newMonth, year: newYear };
     });
   };
@@ -66,15 +66,15 @@ const Events: React.FC = () => {
           Events
         </h1>
 
-        <p className="text-center text-xl sm:text-2xl font-montserrat text-primary sm:m-8">
+        <p className="hidden md:block md:text-center text-xl sm:text-2xl font-montserrat text-primary sm:m-8">
           We host meetings in <strong>DBH 4011</strong> on <strong>Tuesdays 6:00-7:00PM</strong>! Meeting and event updates will be posted on Discord and Instagram, so be sure to follow us!
         </p>
 
-        <div className="flex justify-between text-2xl font-medium text-[#183054] md:mt-14 md:p-5">
-          <div className="flex flex-grow items-center space-x-4 md:ml-52 md:text-3xl">
+        <div className="flex justify-between text-sm md:text-2xl font-medium text-[#183054] md:mt-14 md:p-5">
+          <div className="flex flex-grow items-center gap-2 md:gap-4 md:ml-52">
             <span>{`${monthNames[date.month]} ${date.year}`}</span>
             <button
-            className={`border border-[#294B7B] text-[#294B7B] md:text-base px-3 py-1 rounded-full hover:bg-[#294B7B] hover:text-white
+            className={`border border-[#294B7B] text-[#294B7B] text-xs md:text-base p-2 md:px-3 py-1 rounded-full hover:bg-[#294B7B] hover:text-white
               ${viewMode === "list" 
                 ? "bg-[#294B7B] text-white" 
                 : "text-[#294B7B] hover:bg-[#294B7B] hover:text-white"}`}
@@ -83,7 +83,7 @@ const Events: React.FC = () => {
             Featured
           </button>
           <button
-            className={`border border-[#294B7B] text-[#294B7B] md:text-base px-3 py-1 rounded-full hover:bg-[#294B7B] hover:text-white
+            className={`border border-[#294B7B] text-[#294B7B] text-xs md:text-base p-2 md:px-3 py-1 rounded-full hover:bg-[#294B7B] hover:text-white
               ${viewMode === "calendar" 
                 ? "bg-[#294B7B] text-white" 
                 : "text-[#294B7B] hover:bg-[#294B7B] hover:text-white"}`}
@@ -93,21 +93,21 @@ const Events: React.FC = () => {
           </button>
           </div>
 
-          <div className="flex space-x-4 md:mr-52">
+          <div className="flex gap-2 md:gap-4 md:mr-52">
             <button 
-            className="text-2xl text-[#183054] hover:text-gray-500"
+            className="text-xl md:text-2xl text-[#183054] hover:text-gray-500"
             onClick={handlePrevMonth}>
               {"<"}
             </button>
             <button 
-            className="text-2xl text-[#183054] hover:text-gray-500"
+            className="text-xl md:text-2xl text-[#183054] hover:text-gray-500"
             onClick={handleNextMonth}>
               {">"}
             </button>
           </div>
         </div>
 
-        <hr className="w-3/4 border border-black mx-auto" />
+        <hr className="w-full md:w-3/4 mt-1 md:mt-0 border border-black mx-auto" />
 
         {/* TODO: Make sure to implement EventList and EventCalendar */}
         {viewMode === "list" ? <EventCard /> : <div></div>}
