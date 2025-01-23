@@ -39,7 +39,7 @@ const Team = () => {
       pronouns: "he/him",
     },
     {
-      image: "/images/caretech_logo.png",
+      image: "/images/committee_heads/ranjani_treasurer.jpg",
       firstName: "Ranjani",
       lastName: "Belavadi",
       title: "Treasurer",
