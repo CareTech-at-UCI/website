@@ -1,7 +1,8 @@
-import React from "react";
+import React, {useState} from "react";
 import Footer from "../components/Footer";
 import DetectScroll from "../components/DetectScroll";
 import Navbar from "../components/Navbar";
+import EventCard from "../components/EventCard";
 
 // TODO: Use this const for 1st General Meeting
 
@@ -18,6 +19,44 @@ import Navbar from "../components/Navbar";
 
 
 const Events: React.FC = () => {
+  const [viewMode, setViewMode] = useState<"list"| "calendar">("list")
+
+  const [date, setDate] = useState(() => {
+    const today = new Date();
+    return { month: today.getMonth(), year: today.getFullYear() };
+  });
+
+  const monthNames = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
+  ];
+
+  const handlePrevMonth = () => {
+    setDate((prevDate) => {
+      const newMonth = prevDate.month === 0 ? 11 : prevDate.month - 1;
+      const newYear = prevDate.month === 0 ? prevDate.year - 1 : prevDate.year;
+      return { month: newMonth, year: newYear };
+    });
+  };
+
+  const handleNextMonth = () => {
+    setDate((prevDate) => {
+      const newMonth = prevDate.month === 11 ? 0 : prevDate.month + 1;
+      const newYear = prevDate.month === 11 ? prevDate.year + 1 : prevDate.year;
+      return { month: newMonth, year: newYear };
+    });
+  };
+
   return (
     <>
       <DetectScroll />
@@ -31,26 +70,47 @@ const Events: React.FC = () => {
           We host meetings in <strong>DBH 4011</strong> on <strong>Tuesdays 6:00-7:00PM</strong>! Meeting and event updates will be posted on Discord and Instagram, so be sure to follow us!
         </p>
 
-        <div className="flex justify-between text-2xl font-medium text-[#183054] md:mt-14">
-          <div className="flex flex-grow items-center space-x-4 md:ml-52">
-            <span>January 2025</span>
-            <span className="border border-[#294B7B] text-[#294B7B] text-sm font-bold px-3 py-1 rounded-full">
-              Featured
-            </span>
+        <div className="flex justify-between text-2xl font-medium text-[#183054] md:mt-14 md:p-5">
+          <div className="flex flex-grow items-center space-x-4 md:ml-52 md:text-3xl">
+            <span>{`${monthNames[date.month]} ${date.year}`}</span>
+            <button
+            className={`border border-[#294B7B] text-[#294B7B] md:text-base px-3 py-1 rounded-full hover:bg-[#294B7B] hover:text-white
+              ${viewMode === "list" 
+                ? "bg-[#294B7B] text-white" 
+                : "text-[#294B7B] hover:bg-[#294B7B] hover:text-white"}`}
+              onClick={() => setViewMode("list")}
+            >
+            Featured
+          </button>
+          <button
+            className={`border border-[#294B7B] text-[#294B7B] md:text-base px-3 py-1 rounded-full hover:bg-[#294B7B] hover:text-white
+              ${viewMode === "calendar" 
+                ? "bg-[#294B7B] text-white" 
+                : "text-[#294B7B] hover:bg-[#294B7B] hover:text-white"}`}
+              onClick={() => setViewMode("calendar")}
+            >
+            Calendar
+          </button>
           </div>
 
           <div className="flex space-x-4 md:mr-52">
-            <button className="text-2xl text-[#183054] hover:text-gray-500">
+            <button 
+            className="text-2xl text-[#183054] hover:text-gray-500"
+            onClick={handlePrevMonth}>
               {"<"}
             </button>
-            <button className="text-2xl text-[#183054] hover:text-gray-500">
+            <button 
+            className="text-2xl text-[#183054] hover:text-gray-500"
+            onClick={handleNextMonth}>
               {">"}
             </button>
           </div>
         </div>
 
+        <hr className="w-3/4 border border-black mx-auto" />
+
         {/* TODO: Make sure to implement EventList and EventCalendar */}
-        {/* {viewMode === "list" ? <EventList /> : <EventCalendar />} */}
+        {viewMode === "list" ? <EventCard /> : <div></div>}
       </div>
         <Footer />
     </>
