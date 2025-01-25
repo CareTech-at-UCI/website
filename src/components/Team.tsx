@@ -60,7 +60,7 @@ const Team = () => {
       pronouns: "she/her",
     },
     {
-      image: "/images/caretech_logo.png",
+      image: "/images/committee_heads/tony_tao_marketing.jpg",
       firstName: "Tony",
       lastName: "Tao",
       title: "Marketing Head",
