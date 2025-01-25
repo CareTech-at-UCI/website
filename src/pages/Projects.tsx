@@ -18,7 +18,7 @@ const projects: Project[] = [
     description:
       "This project is based off a research paper where we will build a machine learning model and a user-friendly interface. The user will input images and the model will predict the detect the chances of it being melanoma. The Tech Committee will work on this project until the end of the 2025 academic year.",
     image: "/images/dna_bubbles.png",
-    link: "https://www.google.com",
+    link: "https://github.com/CareTech-at-UCI/melanoma-project",
     tags: [Tag.openSource, Tag.AI],
   },
 ];
