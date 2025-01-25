@@ -4,18 +4,26 @@ import DetectScroll from "../components/DetectScroll";
 import Navbar from "../components/Navbar";
 import EventCard from "../components/EventCard";
 
-// TODO: Use this const for 1st General Meeting
-
-// const events = [
-//   {
-//     date: "January 21, 2025",
-//     time: "6:00-7:00PM",
-//     name: "CareTech’s Introductory Meeting",
-//     description:
-//       "Come learn about what our club is about, meet our board and committees, and compete in Kahoot for amazing prizes!",
-//     image: "", 
-//   },
-// ];
+const events = [
+  {
+    date: "January 28, 2025",
+    time: "6:00-7:00PM",
+    name: "Dataset Manipulation Workshop",
+    description:
+      "Get hands-on experience exploring basics of machine learning and handling datasets using Python/R",
+    image: "/images/meeting_graphics/data_manipulation_workshop.png",
+    alt: "Image of Data Manipulation Workshop Graphic with a Cool Robotic Hand"
+  },
+  {
+    date: "January 21, 2025",
+    time: "6:00-7:00PM",
+    name: "CareTech’s Introductory Meeting",
+    description:
+      "Come learn about what our club is about, meet our board and committees, and compete in Kahoot for amazing prizes!",
+    image: "/images/meeting_graphics/general_meeting_1.png",
+    alt: "Introductory Meeting Graphic"
+  },
+];
 
 
 const Events: React.FC = () => {
@@ -110,7 +118,17 @@ const Events: React.FC = () => {
         <hr className="w-full md:w-3/4 mt-2 md:mt-0 border border-black mx-auto" />
 
         {/* TODO: Make sure to implement EventList and EventCalendar */}
-        {viewMode === "list" ? <EventCard /> : <div></div>}
+        {viewMode === "list" ? (events.map((event) => (
+          <EventCard
+            date={event.date}
+            time={event.time}
+            name={event.name}
+            description={event.description}
+            image={event.image}
+            alt={event.alt}
+          />
+        )))
+           : <div></div>}
       </div>
         <Footer />
     </>
@@ -118,58 +136,3 @@ const Events: React.FC = () => {
 };
 
 export default Events;
-
-
-// PREVIOUSLY USED CODE, FOR REFERENCE
-// const Event = ({ event }: { event: Event }) => {
-//   return (
-//     <div className="flex flex-col items-center p-4">
-//       <div className="w-60 h-60 mb-4">
-//         <img
-//           src={event.image}
-//           alt={`${event.name}`}
-//           width={240}
-//           height={240}
-//           className="object-cover"
-//         />
-//       </div>
-
-//       <h2 className="text-2xl text-[#183054] font-extrabold text-center mb-2">
-//         {event.name}
-//       </h2>
-//       <p className="text-xl text-[#294B7B] font-semibold text-center mb-1">
-//         {event.location}, {event.date.toDateString()}
-//       </p>
-//       <p className="text-md text-[#294B7B] font-light text-center">
-//         {event.description}
-//       </p>
-//     </div>
-//   );
-// };
-
-// interface Event {
-//   image: string;
-//   name: string;
-//   location: string;
-//   date: Date;
-//   description: string;
-// }
-
-// {/* <div className="mx-4 px-4 justify-items-center">
-//   <div className="grid grid-rows-auto gap-y-16 gap-x">
-//     {Array.from(Array(Math.ceil(events.length / itemsPerRow))).map(
-//       (_, rowIndex) => (
-//         <div
-//           key={rowIndex}
-//           className="flex flex-row flex-wrap justify-center gap-8 font-normal"
-//         >
-//           {events
-//             .slice(rowIndex * itemsPerRow, (rowIndex + 1) * itemsPerRow)
-//             .map((event, index) => (
-//               <Event key={index} event={event} />
-//             ))}
-//         </div>
-//       )
-//     )}
-//   </div> */}
-// {/* </div> */}
