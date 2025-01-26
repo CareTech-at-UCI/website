@@ -1,0 +1,18 @@
+- title: Team Meeting
+  start: 2025-02-01T10:00:00
+  end: 2025-02-01T11:00:00
+  description: Weekly team meeting to discuss project updates.
+
+- title: Workshop on React
+  start: 2025-02-08T14:00:00
+  end: 2025-02-08T16:00:00
+  description: A hands-on workshop to learn advanced React concepts.
+
+- title: Coffee Break
+  start: 2025-02-15T09:30:00
+  description: Casual coffee break with the team. No fixed end time.
+
+- title: Product Launch
+  start: 2025-02-22T18:00:00
+  end: 2025-02-22T20:00:00
+  description: Launch event for our new product. Join us for the celebration!
