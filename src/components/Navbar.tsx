@@ -14,14 +14,13 @@ const Navbar: React.FC = () => {
       <header className="fixed top-0 left-0 z-50 w-full transition-all duration-300">
         <nav className="flex items-center z-50 justify-between px-8 py-3 xl:bg-transparent">
           {/* Logo */}
-          <div className="flex items-center">
+          <a href="/" className="flex items-center">
             <img src="/images/caretech_nobackg.png" alt="CareTech Logo" className="w-30 h-12" />
             <div className="ml-4 font-semibold xl:text-lg lg:text-xl text-3xl">CareTech</div>
-          </div>
+          </a>
 
           {/* Center Menu Links */}
           <ul className="hidden xl:flex items-center space-x-6 font-medium text-2xl mx-auto">
-            <li><Link to="/">Home</Link></li>
             <li><Link to="/About">About Us</Link></li>
             <li><Link to="/Projects">Projects</Link></li>
             <li><Link to="/Events">Events</Link></li>
