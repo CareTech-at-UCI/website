@@ -8,7 +8,7 @@ const Footer: React.FC = () => {
         <p className="mb-2">&copy; 2024 CARETECH. All Rights Reserved.</p>
         <p className="mb-2">Designed by Julia Nguyen</p>
         <p className="text-sm md:text-base">
-          Developed by Margaret Galvez, Nathan Ong, Priyansh Shah, Rushil Dileep
+          Developed by Margaret Galvez, Nathan Ong, Priyansh Shah, Rushil Dileep, Elena Kao
         </p>
       </div>
 
