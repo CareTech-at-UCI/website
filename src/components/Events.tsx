@@ -17,7 +17,7 @@ const Events: React.FC = () => {
             >
               View All Events
               <img
-                className="size-10 md:w-fit md:h-fit"
+                className="size-10 md:w-fit md:h-fit hover:animate-bounce"
                 src="/icons/blue_arrow.svg"
                 alt="BlueArrowIcon"
               />

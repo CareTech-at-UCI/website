@@ -18,7 +18,7 @@ const AboutUs: React.FC = () => {
             >
               More
               <img
-                className="size-4 md:w-fit md:h-fit ml-2"
+                className="size-4 md:w-fit md:h-fit ml-2 hover:animate-bounce"
                 src="/icons/lightblue_arrow.svg"
                 alt="LightBlueArrowIcon"
               />
