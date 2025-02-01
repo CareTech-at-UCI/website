@@ -1,99 +1,32 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
-import { Calendar, momentLocalizer } from "react-big-calendar";
-import moment from "moment";
-import yaml from "js-yaml";
-import "react-big-calendar/lib/css/react-big-calendar.css";
 
-// for handling weird times in yaml file
-const localizer = momentLocalizer(moment);
-
-// yaml file looks like this
-interface CalendarEvent {
-  title: string;
-  start: Date;
-  end?: Date;
-  description: string;
-}
-
-const Event: React.FC = () => {
-  const [events, setEvents] = useState<CalendarEvent[]>([]);
-  const [selectedEvent, setSelectedEvent] = useState<CalendarEvent | null>(
-    null
-  );
-
-  useEffect(() => {
-    // get events from yaml file in public
-    fetch("/events.yaml")
-      .then((response) => response.text())
-      .then((text) => {
-        const data = yaml.load(text);
-        const parsedEvents = (data as any[]).map((event: any) => ({
-          ...event,
-          start: moment(event.start).toDate(),
-          end: event.end
-            ? moment(event.end).toDate()
-            : moment(event.start).add(2, "hours").toDate(),
-        }));
-        setEvents(parsedEvents);
-      });
-  }, []);
-  // Each event component looks like this in the calendar (the thing in the blue boc)
-  const EventComponent = ({ event }: { event: CalendarEvent }) => (
-    <div className="p-1 sm:p-2 md:p-3">
-      <div className="font-semibold text-[10px] sm:text-sm md:text-base truncate">
-        {event.title}
-      </div>
-      <div className="text-[8px] sm:text-xs md:text-sm truncate">
-        {moment(event.start).format("h:mm A")}
-        {event.end && ` - ${moment(event.end).format("h:mm A")}`}
-      </div>
-    </div>
-  );
-
+const Events: React.FC = () => {
   return (
     <section className="bg-white font-jersey p-10 md:p-20 h-auto flex justify-center">
-       <div className="flex-col">
-        <h2 className="text-5xl md:text-6xl mb-2 md:mb-4 text-center">Events</h2>
+      <div className="flex-col">
+        <h2 className="text-5xl md:text-6xl mb-2 md:mb-4 text-center">
+          Events
+        </h2>
         <p className="font-normal text-sm md:text-2xl text-[#294B7B] mb-2 md:mb-6 text-center">
           We host events in DBH 4011 at Tuesdays 6:00-7:00PM!
         </p>
         <div className="flex justify-center mb-32">
-            <Link
-              to="/Events"
-              className="font-normal text-lg md:text-2xl text-[#0097FC] flex items-center"
-            >
-              View All Events
-              <img
-                className="size-10 md:w-fit md:h-fit hover:animate-bounce"
-                src="/icons/blue_arrow.svg"
-                alt="BlueArrowIcon"
-              />
-            </Link>
+          <Link
+            to="/Events"
+            className="font-normal text-lg md:text-2xl text-[#0097FC] flex items-center"
+          >
+            View All Events
+            <img
+              className="size-10 md:w-fit md:h-fit hover:animate-bounce"
+              src="/icons/blue_arrow.svg"
+              alt="BlueArrowIcon"
+            />
+          </Link>
         </div>
       </div>
-      {/* Modal for event details */}
-      {selectedEvent && (
-        <div className="fixed inset-0 bg-black/50 flex items-center justify-center p-4 z-50">
-          <div className="bg-white rounded-xl max-w-lg w-full p-6 mx-4">
-            <h3 className="text-2xl font-bold mb-2">{selectedEvent.title}</h3>
-            <div className="text-gray-600 mb-4">
-              {moment(selectedEvent.start).format("MMMM D, YYYY h:mm A")}
-              {selectedEvent.end &&
-                ` - ${moment(selectedEvent.end).format("h:mm A")}`}
-            </div>
-            <p className="text-gray-700 mb-6">{selectedEvent.description}</p>
-            <button
-              onClick={() => setSelectedEvent(null)}
-              className="w-full bg-[#0097FC] hover:bg-[#0078c9] text-white py-2 px-4 rounded-lg transition-colors"
-            >
-              Close
-            </button>
-          </div>
-        </div>
-      )}
     </section>
   );
 };
 
-export default Event;
+export default Events;
