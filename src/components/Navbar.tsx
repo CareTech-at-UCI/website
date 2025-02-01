@@ -14,19 +14,18 @@ const Navbar: React.FC = () => {
       <header className="fixed top-0 left-0 z-50 w-full transition-all duration-300">
         <nav className="flex items-center z-50 justify-between px-8 py-3 xl:bg-transparent">
           {/* Logo */}
-          <div className="flex items-center">
+          <a href="/" className="flex items-center">
             <img src="/images/caretech_nobackg.png" alt="CareTech Logo" className="w-30 h-12" />
             <div className="ml-4 font-semibold xl:text-lg lg:text-xl text-3xl">CareTech</div>
-          </div>
+          </a>
 
           {/* Center Menu Links */}
           <ul className="hidden xl:flex items-center space-x-6 font-medium text-2xl mx-auto">
-            <li><Link to="/">Home</Link></li>
             <li><Link to="/About">About Us</Link></li>
             <li><Link to="/Projects">Projects</Link></li>
             <li><Link to="/Events">Events</Link></li>
             <li><Link to="/Resources">Resources</Link></li>
-            <li>Join</li>
+            {/* <li>Join</li> */}
             <li><Link to="/ContactUs">Contact</Link></li>
           </ul>
 
@@ -39,7 +38,7 @@ const Navbar: React.FC = () => {
           <ul className="hidden xl:flex items-center space-x-5 font-medium">
             <li><a href="https://discord.gg/UZXpqynDzt" target="_blank" rel="noopener noreferrer"><FaDiscord size={30} /></a></li>
             <li><a href="https://www.linkedin.com/company/caretech-uci/posts/?feedView=all" target="_blank" rel="noopener noreferrer"><FaLinkedin size={30} /></a></li>
-            <li><a href="#" rel="noopener noreferrer"><FaTree size={30} /></a></li>
+            <li><a href="https://linktr.ee/caretechuci" rel="noopener noreferrer"><FaTree size={30} /></a></li>
             <li><a href="https://www.instagram.com/caretech_uci/?hl=en" target="_blank" rel="noopener noreferrer"><FaInstagram size={30} /></a></li>
           </ul>
         </nav>
@@ -54,7 +53,7 @@ const Navbar: React.FC = () => {
             <li><Link to="/Projects">Projects</Link></li>
             <li><Link to="/Events">Events</Link></li>
             <li><Link to="/Resources">Resources</Link></li>
-            <li>Join</li>
+            {/* <li>Join</li> */}
             <li><Link to="/ContactUs">Contact</Link></li>
         </ul>
       </div>

@@ -6,7 +6,7 @@ function ContactUs() {
   const socials = [
     {
       svg: "/icons/discord.svg",
-      link: "https://discord.gg/",
+      link: "https://discord.gg/UZXpqynDzt",
       name: "Discord",
       social: "CareTech@UCI",
     },
@@ -18,7 +18,7 @@ function ContactUs() {
     },
     {
       svg: "/icons/linkedin.svg",
-      link: "https://www.linkedin.com/company/",
+      link: "https://www.linkedin.com/company/caretech-uci/posts/?feedView=all",
       name: "LinkedIn",
       social: "UCI CareTech",
     },
@@ -27,7 +27,7 @@ function ContactUs() {
     <>
       <DetectScroll />
       <Navbar />
-      <div>
+      <div className="mb-56 sm:mb-auto">
         <div className="h-svh w-full flex flex-col justify-center items-center sm: pt-52 md:pt-9">
           <h1 className="text-6xl md:text-8xl font-jersey text-primary mb-4">
             Contact Us
@@ -41,8 +41,8 @@ function ContactUs() {
             ))}
           </div>
         </div>
-        <Footer />
       </div>
+      <Footer />
       </>
   );
 }

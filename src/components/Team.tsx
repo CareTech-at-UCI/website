@@ -11,105 +11,98 @@ interface TeamMember {
 const Team = () => {
   const teamMembers: TeamMember[] = [
     {
-      image: "/images/caretech_logo.png",
-      firstName: "First Name",
-      lastName: "Last Name",
-      title: "CareTech X",
+      image: "/images/committee_heads/aanya_agrawal_copres.png",
+      firstName: "Aanya",
+      lastName: "Agrawal",
+      title: "Co-President",
+      pronouns: "she/her",
+    },
+    {
+      image: "/images/committee_heads/pranav_gonuguntla_co_pres.jpg",
+      firstName: "Pranav",
+      lastName: "Gonuguntla",
+      title: "Co-President",
       pronouns: "he/him",
     },
     {
-      image: "/images/caretech_logo.png",
-      firstName: "First Name",
-      lastName: "Last Name",
-      title: "CareTech X",
+      image: "/images/committee_heads/isaac_zhang_vp.jpg",
+      firstName: "Isaac",
+      lastName: "Zhang",
+      title: "Vice President",
       pronouns: "he/him",
     },
     {
-      image: "/images/caretech_logo.png",
-      firstName: "First Name",
-      lastName: "Last Name",
-      title: "CareTech X",
+      image: "/images/committee_heads/edison_secretary.jpg",
+      firstName: "Edison",
+      lastName: "Trinh",
+      title: "Secretary",
       pronouns: "he/him",
     },
     {
-      image: "/images/caretech_logo.png",
-      firstName: "First Name",
-      lastName: "Last Name",
-      title: "CareTech X",
+      image: "/images/committee_heads/ranjani_treasurer.jpg",
+      firstName: "Ranjani",
+      lastName: "Belavadi",
+      title: "Treasurer",
+      pronouns: "she/her",
+    },
+    {
+      image: "/images/committee_heads/suhani_khandelwal_event.jpg",
+      firstName: "Suhani",
+      lastName: "Khandelwal",
+      title: "Event Head",
+      pronouns: "she/her",
+    },
+    {
+      image: "/images/committee_heads/julia_nguyen.png",
+      firstName: "Julia",
+      lastName: "Nguyen",
+      title: "Marketing Head",
+      pronouns: "she/her",
+    },
+    {
+      image: "/images/committee_heads/tony_tao_marketing.jpg",
+      firstName: "Tony",
+      lastName: "Tao",
+      title: "Marketing Head",
       pronouns: "he/him",
     },
     {
-      image: "/images/caretech_logo.png",
-      firstName: "First Name",
-      lastName: "Last Name",
-      title: "CareTech X",
+      image: "/images/committee_heads/elaine_johann_outreach.jpeg",
+      firstName: "Elaine",
+      lastName: "Zhu",
+      title: "Outreach Head",
+      pronouns: "she/her",
+    },
+    {
+      image: "/images/committee_heads/zarin_hasan_event.jpg",
+      firstName: "Zarin",
+      lastName: "Hasan",
+      title: "Outreach Head",
+      pronouns: "she/her",
+    },
+    {
+      image: "/images/committee_heads/andy_xie_project.jpg",
+      firstName: "Andy",
+      lastName: "Xie",
+      title: "Project Head",
       pronouns: "he/him",
     },
     {
-      image: "/images/caretech_logo.png",
-      firstName: "First Name",
-      lastName: "Last Name",
-      title: "CareTech X",
-      pronouns: "he/him",
-    },
-    {
-      image: "/images/caretech_logo.png",
-      firstName: "First Name",
-      lastName: "Last Name",
-      title: "CareTech X",
-      pronouns: "he/him",
-    },
-    {
-      image: "/images/caretech_logo.png",
-      firstName: "First Name",
-      lastName: "Last Name",
-      title: "CareTech X",
-      pronouns: "he/him",
-    },
-    {
-      image: "/images/caretech_logo.png",
-      firstName: "First Name",
-      lastName: "Last Name",
-      title: "CareTech X",
-      pronouns: "he/him",
-    },
-    {
-      image: "/images/caretech_logo.png",
-      firstName: "First Name",
-      lastName: "Last Name",
-      title: "CareTech X",
-      pronouns: "he/him",
-    },
-    {
-      image: "/images/caretech_logo.png",
-      firstName: "First Name",
-      lastName: "Last Name",
-      title: "CareTech X",
-      pronouns: "he/him",
-    },
-    {
-      image: "/images/caretech_logo.png",
-      firstName: "First Name",
-      lastName: "Last Name",
-      title: "CareTech X",
-      pronouns: "he/him",
-    },
-    {
-      image: "/images/caretech_logo.png",
-      firstName: "First Name",
-      lastName: "Last Name",
-      title: "CareTech X",
-      pronouns: "he/him",
+      image: "/images/committee_heads/margaret_tech.jpg",
+      firstName: "Margaret",
+      lastName: "Galvez",
+      title: "Tech Head",
+      pronouns: "she/her",
     },
   ];
 
-  const itemsPerRow = 5;
+  const itemsPerRow = 1000000;
   return (
     <div className="min-h-screen w-full p-8">
-      <h1 className="text-6xl md:text-8xl mt-16 justify-center text-center font-jersey text-[#183054]">
+      <h1 className="text-6xl md:text-8xl mt-4 sm:mt-16 sm:mb-8 justify-center text-center font-jersey text-[#183054]">
         Our Team
       </h1>
-      <div className="flex flex-wrap justify-center gap-8 mt-8">
+      <div className="flex flex-wrap justify-center gap-8">
           {Array.from(Array(Math.ceil(teamMembers.length / itemsPerRow))).map(
             (_, rowIndex) => (
               <div

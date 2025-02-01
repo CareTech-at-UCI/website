@@ -52,66 +52,24 @@ const Event: React.FC = () => {
   );
 
   return (
-    // actual events sections
-    <section className="min-h-screen bg-white font-jersey px-4 py-8 md:px-8 lg:px-16 xl:px-20">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl mb-4 text-center font-bold">
-          Events
-        </h2>
-        <p className="text-sm sm:text-base md:text-lg lg:text-xl text-[#294B7B] mb-6 text-center max-w-3xl mx-auto">
-          We host events in [Location] at [time and day]!
+    <section className="bg-white font-jersey p-10 md:p-20 h-auto flex justify-center">
+       <div className="flex-col">
+        <h2 className="text-5xl md:text-6xl mb-2 md:mb-4 text-center">Events</h2>
+        <p className="font-normal text-sm md:text-2xl text-[#294B7B] mb-2 md:mb-6 text-center">
+          We host events in DBH 4011 at Tuesdays 6:00-7:00PM!
         </p>
-
-        <div className="flex justify-center mb-8">
-          <Link
-            to="/Events"
-            className="inline-flex items-center text-base sm:text-lg text-[#0097FC] hover:text-[#0078c9] transition-colors"
-          >
-            View All Events
-            <img
-              className="w-4 h-4 sm:w-6 sm:h-6 ml-2"
-              src="/icons/blue_arrow.svg"
-              alt="View more"
-            />
-          </Link>
-        </div>
-    {/* Till up was there brfore */}
-
-    {/* Big Calendar component taking 75 % of screen height */}
-        <div className=" h-[75vh] bg-white rounded-lg shadow-lg p-2 sm:p-4">
-          {/* react calendar needs localizer from moment */}
-          <Calendar
-            localizer={localizer}
-            // events (events from yaml file grabbed by useEffect)
-            events={events}
-            // the key for each event which indicates the start and end
-            startAccessor="start"
-            endAccessor="end"
-            // click on event to show modal of the event you want to show (this broke my brain)
-            onSelectEvent={setSelectedEvent}
-            // custom event component (what it looks like on the calendar the blue blox)
-            components={{
-              event: EventComponent,
-            }}
-            className="rounded-lg text-sm sm:text-xs"
-            // formats for time gutter and event time range
-
-            // uses moment to format the time gutter and event time range
-            formats={{
-              timeGutterFormat: (date: Date) => moment(date).format("h A"),
-              eventTimeRangeFormat: ({
-                start,
-                end,
-              }: {
-                start: Date;
-                end: Date;
-              }) => {
-                return `${moment(start).format("h:mm A")} - ${moment(
-                  end
-                ).format("h:mm A")}`;
-              },
-            }}
-          />
+        <div className="flex justify-center mb-32">
+            <Link
+              to="/Events"
+              className="font-normal text-lg md:text-2xl text-[#0097FC] flex items-center"
+            >
+              View All Events
+              <img
+                className="size-10 md:w-fit md:h-fit hover:animate-bounce"
+                src="/icons/blue_arrow.svg"
+                alt="BlueArrowIcon"
+              />
+            </Link>
         </div>
       </div>
       {/* Modal for event details */}
