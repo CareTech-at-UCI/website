@@ -164,6 +164,7 @@ const Events: React.FC = () => {
             startAccessor="start"
             endAccessor="end"
             titleAccessor="name"
+            views={["month"]}
             style={{ height: 500 }}
             className="mt-8 mb-16 mx-auto w-full md:w-3/4"
           />
