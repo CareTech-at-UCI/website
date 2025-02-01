@@ -163,10 +163,40 @@ const Events: React.FC = () => {
             events={events}
             startAccessor="start"
             endAccessor="end"
-            titleAccessor="name"
+            titleAccessor={(event: Event) => `${event.time} ${event.name}`}
             views={["month"]}
-            style={{ height: 500 }}
+            style={{ height: 800 }}
             className="mt-8 mb-16 mx-auto w-full md:w-3/4"
+            eventPropGetter={() => ({
+              style: {
+                backgroundColor: "transparent",
+                border: "none",
+                color: "#183054",
+                whiteSpace: "pre-line",
+              },
+            })}
+            formats={{
+              eventTimeRangeFormat: () => "",
+              eventTimeRangeEndFormat: () => "",
+              timeGutterFormat: (date: Date) => moment(date).format("h:mm A"),
+            }}
+            components={{
+              month: {
+                header: ({ label }) => (
+                  <div className="w-full bg-[#183054] text-white text-center py-2">
+                    {label}
+                  </div>
+                ),
+              },
+              event: ({ event }) => (
+                <div className="bg-transparent p-2 rounded-md whitespace-normal">
+                  <p className="text-[#183054]">{event.time}</p>
+                  <p className="text-[#183054] font-semibold break-words">
+                    {event.name}
+                  </p>
+                </div>
+              ),
+            }}
           />
         )}
       </div>

@@ -1,25 +1,42 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jersey+10&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
 .font-jersey {
-    font-family: 'Jersey 10', sans-serif;
+  font-family: "Jersey 10", sans-serif;
 }
 
 .font-montserrat {
-    font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .text-primary {
-    color: #183054;
+  color: #183054;
 }
 .text-secondary {
-    color: #294B7B;
+  color: #294b7b;
 }
 
+.rbc-header {
+  padding: 0 0px !important;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.rbc-month-row,
+.rbc-header {
+  border: 1px solid #183054 !important;
+}
+.rbc-month-view {
+  border: 3px solid #183054 !important;
+}
+
+.rbc-day-bg {
+  border-left: 2px solid #183054 !important;
+}
