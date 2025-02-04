@@ -2,10 +2,10 @@ import React from "react";
 
 const WhoWeAre: React.FC = () => {
   return (
-    <section className="bg-white font-jersey p-6 pt-12 mb-11 justify-center">
+    <section className="bg-white font-jersey p-6 pt-12 mb-11 justify-center min-h-screen w-full">
       <div className="flex-col">
         <h2 className="text-6xl sm:text-8xl mt-8 sm:pt-20 md:pt-14 pb-2 text-center text-primary">What Is CareTech?</h2>
-        <div className="flex justify-between flex-wrap flex-col lg:flex-row">
+        <div className="flex justify-between flex-wrap flex-col lg:flex-row md:pt-14">
           <p className="font-normal text-lg sm:text-2xl text-[#294B7B] flex-1 w-full ml-12">
             We are a student-led organization that will collaborate with
             industry-leading companies to{" "}
@@ -23,7 +23,7 @@ const WhoWeAre: React.FC = () => {
             spot for you!
           </p>
           <img
-            className="block mt-[150px] md:m-8 w-100 h-72 object-contain"
+            className="mr:m-12 md:m-12 h-72"
             src="/images/caretech_nobackg.png"
             alt="CareTechAnimal"
           ></img>
