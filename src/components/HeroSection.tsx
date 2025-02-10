@@ -23,10 +23,10 @@ const HeroSection: React.FC = () => {
           </p>
           
             {/* <a href="" target="_blank" rel="noopener noreferrer"> */}
-              <button className="flex mt-6 md:mt-11 px-6 md:px-4 py-3 md:py-5 bg-sky-blue font-medium text-lg md:text-lg rounded-3xl hover:bg-[#d4f4ff] justify-self-center md:justify-self-start">
+              <p className="flex mt-6 md:mt-11 px-6 md:px-4 py-3 md:py-3 bg-sky-blue italic font-medium text-lg md:text-lg rounded-sm justify-self-center md:justify-self-start">
                 Look out for applications in Fall Quarter
                 {/* <img className='w-5 md:w-7 h-fit my-auto pl-2 hover:animate-bounce' src="/icons/black_arrow.svg" alt="Arrow"></img> */}
-              </button>
+              </p>
             {/* </a> */}
           
         </div>
