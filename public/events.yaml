@@ -1,0 +1,20 @@
+- name: Dataset Manipulation Workshop
+  date: January 28, 2025
+  time: 6:00-7:00PM
+  description: Get hands-on experience exploring basics of machine learning and handling datasets using Python/R
+  image: /images/meeting_graphics/data_manipulation_workshop.png
+  alt: Image of Data Manipulation Workshop Graphic with a Cool Robotic Hand
+
+- name: CareTech's Introductory Meeting
+  date: January 21, 2025
+  time: 6:00-7:00PM
+  description: Come learn about what our club is about, meet our board and committees, and compete in Kahoot for amazing prizes!
+  image: /images/meeting_graphics/general_meeting_1.png
+  alt: Introductory Meeting Graphic
+
+- name: Fake Event
+  date: February 21, 2025
+  time: 6:00-7:00PM
+  description: Come learn about what our club is about, meet our board and committees, and compete in Kahoot for amazing prizes!
+  image: /images/meeting_graphics/general_meeting_1.png
+  alt: Introductory Meeting Graphic
