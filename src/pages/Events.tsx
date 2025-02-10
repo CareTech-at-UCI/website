@@ -29,25 +29,31 @@ const Events: React.FC = () => {
       .then((response) => response.text())
       .then((text) => {
         const data = yaml.load(text);
-        const parsedEvents = (data as CalendarEvent[]).map(
-          (event: CalendarEvent) => ({
+        
+        const parsedEvents = (data as CalendarEvent[]).map((event: CalendarEvent) => {
+          const timeParts = event.time.replace(/([APM]+)$/, " $1").split("-"); // add space before AM/PM
+          const startMoment = moment(`${event.date} ${timeParts[0]}`, "MMMM D, YYYY h:mm A");
+  
+          const endMoment = timeParts.length > 1
+            ? moment(`${event.date} ${timeParts[1]}`, "MMMM D, YYYY h:mm A") // if end time exists, parse it
+            : startMoment.clone().add(1, "hour"); // if only start time, clone and add an hour
+  
+          return {
             name: event.name || "Untitled Event",
             description: event.description || "",
             date: event.date,
             time: event.time,
-            start: moment(`${event.date} ${event.time.split("-")[0]}`).toDate(),
-            end: event.time.includes("-")
-              ? moment(`${event.date} ${event.time.split("-")[1]}`).toDate()
-              : moment(`${event.date} ${event.time.split("-")[0]}`)
-                  .add(1, "hour")
-                  .toDate(),
+            start: startMoment.isValid() ? startMoment.toDate() : new Date(), 
+            end: endMoment.isValid() ? endMoment.toDate() : new Date(),
             alt: event.alt || "",
             image: event.image || "",
-          })
-        );
+          };
+        });
+
         setEvents(parsedEvents);
       });
   }, []);
+  
   const monthNames = [
     "January",
     "February",
