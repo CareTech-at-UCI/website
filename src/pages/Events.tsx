@@ -3,13 +3,19 @@ import Footer from "../components/Footer";
 import DetectScroll from "../components/DetectScroll";
 import Navbar from "../components/Navbar";
 import EventCard from "../components/EventCard";
-import { Event as CalendarEvent } from "../components/EventCard";
+// import { Event as CalendarEvent } from "../components/EventCard";
 import { Calendar, momentLocalizer } from "react-big-calendar";
 import moment from "moment";
 import yaml from "js-yaml";
 import "react-big-calendar/lib/css/react-big-calendar.css";
 
-type Event = CalendarEvent & {
+type Event = {
+  date: string;
+  time: string;
+  name: string;
+  description: string;
+  image: string;
+  alt: string;
   start: Date;
   end: Date;
 };
@@ -28,9 +34,9 @@ const Events: React.FC = () => {
     fetch("/events.yaml")
       .then((response) => response.text())
       .then((text) => {
-        const data = yaml.load(text);
+        const data = yaml.load(text) as any[];
         
-        const parsedEvents = (data as CalendarEvent[]).map((event: CalendarEvent) => {
+        const parsedEvents = data.map((event) => {
           const timeParts = event.time.replace(/([APM]+)$/, " $1").split("-"); // add space before AM/PM
           const startMoment = moment(`${event.date} ${timeParts[0]}`, "MMMM D, YYYY h:mm A");
   
@@ -49,7 +55,7 @@ const Events: React.FC = () => {
             image: event.image || "",
           };
         });
-
+        
         setEvents(parsedEvents);
       });
   }, []);
@@ -145,25 +151,11 @@ const Events: React.FC = () => {
 
         <hr className="w-full md:w-3/4 mt-2 md:mt-0 border border-black mx-auto" />
 
-        {/* TODO: Make sure to implement EventList and EventCalendar */}
         {viewMode === "list" ? (
           events
-            .filter(
-              (event) =>
-                event.date.includes(monthNames[date.month]) &&
-                event.date.includes(date.year.toString())
-            )
-            .map((event) => (
-              <EventCard
-                date={event.date}
-                time={event.time}
-                name={event.name}
-                description={event.description}
-                image={event.image}
-                alt={event.alt}
-              />
-            ))
-        ) : (
+            .filter((event) => event.date.includes(monthNames[date.month]) && event.date.includes(date.year.toString()))
+            .map((event) => <EventCard key={event.name} event={event} />)
+          ) : (
           <Calendar
             localizer={localizer}
             events={events}
