@@ -24,13 +24,13 @@ const Committees = () => {
       icon: <ChartBar className="w-14 h-14 text-white" />,
       name: "Project Committee",
       description:
-        "Brainstorm and shape the next big projects that drive our work through conducting research.",
+        "Brainstorm and shape the next big projects that drive our work through conducting research and turning our ideas into real world projects that companies and the public would be interested in.",
     },
     {
       icon: <Laptop className="w-14 h-14 text-white" />,
       name: "Tech Committee",
       description:
-        "Design, code, and develop cutting-edge applications designed to impact and improve healthcare.",
+        "Engage directly in the design and development process to code cutting-edge applications designed to impact and improve healthcare.",
     },
   ];
 
@@ -70,11 +70,11 @@ const CommitteeCard = ({
   committee: { icon: JSX.Element; name: string; description: string };
 }) => {
   return (
-    <div className="p-4 sm:p-10 flex-col sm:flex sm:flex-row justify-items-center sm:items-start max-w-xl">
+    <div className="md:p-5 sm:p-10 mb-2 flex-col sm:flex sm:flex-row justify-items-center sm:items-start max-w-xl">
       <div className="mb-2 sm:mr-4">{committee.icon}</div>
       <div className="flex flex-col sm:text-3xl text-white font-normal text-center sm:text-left">
-        <h2 className="mb-2 text-xl sm:text-3xl font-bold">{committee.name}</h2>
-        <p className="text-base sm:text-3xl">{committee.description}</p>
+        <h2 className="mb-2 text-xl xl:[font-size:26px] md:[font-size:25px] sm:text-3xl font-bold">{committee.name}</h2>
+        <p className="text-base xl:[font-size:25px] md:[font-size:24px] sm:text-3xl">{committee.description}</p>
       </div>
     </div>
   );
