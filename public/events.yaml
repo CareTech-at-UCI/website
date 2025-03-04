@@ -1,9 +1,16 @@
 - name: CareTech UTC Social
+  date: March 4, 2025
+  time: 6:00-7:00PM
+  description: Classify and compete at our Image Classify Competition, our culminating workshop for this quarter! At this event, you'll be able to put the skills you learned from the previous workshops to use and classify images on your own. Stay tuned for a potential prize!
+  image: /images/meeting_graphics/imageclassificationcomp_1.png
+  alt: Image Classification Competition
+
+- name: CareTech UTC Social
   date: February 25, 2025
   time: 6:00-7:00PM
   description: Whether you’re already involved or just curious, we’d love to see you there! It’s a great chance to meet other members, chat with committee heads and board members, and just have a good time. No pressure—just a fun way to get to know each other!
   image: /images/meeting_graphics/utc_social.png
-  alt: UTC Socia Graphic with blue background and people
+  alt: UTC Social Graphic with blue background and people
 
 
 - name: GLCM Image Classification Workshop
