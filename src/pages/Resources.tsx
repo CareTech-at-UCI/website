@@ -32,8 +32,8 @@ function Resources() {
       <>
         <DetectScroll />
         <Navbar />
-        <div className="text-center pt-20">
-          <h1 className="text-6xl sm:text-8xl text-primary font-jersey">
+        <div className="text-center p-8 pt-12">
+          <h1 className="text-6xl sm:text-8xl mt-8 sm:pt-20 md:pt-14 text-primary font-jersey">
             Resources
           </h1>
           <p className="text-secondary p-8 text-xl sm:text-2xl font-montserrat">
@@ -48,7 +48,7 @@ function Resources() {
             </Link> for current opportunities!
           </p>
         </div>
-        <div className="flex flex-col flex-wrap md:flex-row justify-center gap-8 mx-10 p-3 mb-96 font-montserrat">
+        <div className="flex flex-col flex-wrap sm:flex-row justify-center gap-8 mx-10 p-3 mb-96 font-montserrat">
             {resources.map((resource) => (
             <ResourceCard key={resource.title} {...resource} />
             ))}

@@ -18,7 +18,7 @@ export enum Tag {
 function ResourceCard({title, description, image, link, tags}: Resource ) {
     return (
         <div 
-            className={`group flex flex-col rounded-lg w-full md:w-1/2 lg:w-1/4 aspect-square`} 
+            className={`group flex flex-col rounded-lg w-full sm:w-44 md:w-1/3 lg:w-1/4 aspect-square`} 
             style={{ backgroundImage: `url(${image})`, 
             backgroundSize: 'cover', 
             backgroundPosition: 'center'}}

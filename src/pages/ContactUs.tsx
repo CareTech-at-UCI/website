@@ -27,9 +27,9 @@ function ContactUs() {
     <>
       <DetectScroll />
       <Navbar />
-      <div className="mb-56 sm:mb-auto">
-        <div className="h-svh w-full flex flex-col justify-center items-center sm: pt-52 md:pt-9">
-          <h1 className="text-6xl md:text-8xl font-jersey text-primary mb-4">
+      <div className="pb-96 sm:mb-auto  p-6 pt-12">
+        <div className="w-full flex flex-col justify-center items-center mt-8 sm:pt-18 md:pt-14">
+          <h1 className="text-6xl md:text-8xl font-jersey text-primary mb-28">
             Contact Us
           </h1>
           <div className="bg-[#BEEEFF] font-montserrat text-xl py-4 md:px-20 md:py-4 md:text-2xl px-6 text-primary rounded-full">

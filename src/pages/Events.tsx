@@ -95,8 +95,8 @@ const Events: React.FC = () => {
     <>
       <DetectScroll />
       <Navbar />
-      <div className="min-h-screen w-full p-8">
-        <h1 className="text-6xl sm:text-8xl mt-16 md:pt-24 text-center mb-4 sm:mb-8 font-jersey text-[#183054]">
+      <div className="min-h-screen w-full p-8 pt-12 mb-96">
+        <h1 className="text-6xl sm:text-8xl mt-8 sm:pt-20 md:pt-14 text-center mb-4 sm:mb-8 font-jersey text-[#183054]">
           Events
         </h1>
 
@@ -107,7 +107,7 @@ const Events: React.FC = () => {
         </p>
 
         <div className="flex justify-between text-sm md:text-2xl font-medium text-[#183054] md:mt-14 md:p-5">
-          <div className="flex flex-grow items-center gap-2 md:gap-4 md:ml-52">
+          <div className="flex flex-grow items-center gap-2 md:gap-4 lg:ml-52 md:ml-20">
             <span>{`${monthNames[date.month]} ${date.year}`}</span>
             <button
               className={`border border-[#294B7B] text-[#294B7B] text-xs md:text-base p-2 md:px-3 py-1 rounded-full hover:bg-[#294B7B] hover:text-white

@@ -28,8 +28,8 @@ function Projects() {
     <>
       <DetectScroll />
       <Navbar />
-      <div className="text-center pt-20">
-        <h1 className="text-6xl sm:text-8xl text-primary sm:mb-8 font-jersey">
+      <div className="text-center pt-12">
+        <h1 className="text-6xl sm:text-8xl mt-8 sm:pt-20 md:pt-14 text-primary sm:mb-8 font-jersey">
           Projects
         </h1>
         <p className="text-secondary p-8 text-xl sm:text-2xl font-montserrat">
@@ -37,7 +37,7 @@ function Projects() {
           that improve patient care and transform the way we approach health.
         </p>
       </div>
-      <div className="flex flex-wrap justify-center gap-8 mx-auto p-3 mb-5 font-montserrat">
+      <div className="flex flex-wrap justify-center gap-8 mx-auto p-3 mb-96 font-montserrat">
         {projects.map((project) => (
           <ProjectCard key={project.title} {...project} />
         ))}

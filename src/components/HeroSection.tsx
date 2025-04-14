@@ -6,7 +6,7 @@ const HeroSection: React.FC = () => {
     className="bg-[url('/public/images/dna_strand_mobile.png')] md:bg-[url('/public/images/dnastrand_bkg.png')] 
               bg-contain bg-top md:bg-right bg-no-repeat h-auto flex flex-col items-start text-left p-6 md:p-14"
     >
-        <div className="max-w-screen-lg pt-52 md:pt-20">
+        <div className="sm:h-svh max-w-screen-lg pt-52 md:pt-20">
           <div className="flex items-center justify-center md:justify-normal space-x-2 md:space-x-4 pt-12">
             <div className="w-5 md:w-12 border-t border-black" />
             <h2 className="font-semibold text-2xl md:text-3xl">CareTech at UCI.</h2>
