@@ -9,15 +9,19 @@ const projects: Project[] = [
     title: "CareTech Website",
     description:
       "Want to learn more about how this website was made? Check it on our github! This website was made by the Tech Committee.",
-    image: "/images/caretech_logo.png",
+    image: "/images/projects/website_cover.png",
     link: "https://github.com/CareTech-at-UCI/website",
     tags: [Tag.closedSource],
   },
   {
     title: "AI Melanoma Detection System",
     description:
-      "This project is based off a research paper where we will build a machine learning model and a user-friendly interface. The user will input images and the model will predict the detect the chances of it being melanoma. The Tech Committee will work on this project until the end of the 2025 academic year.",
-    image: "/images/dna_bubbles.png",
+      `In the Tech Committee, we built a machine learning model from scratch and linked it to a user-friendly interface. 
+      A user uploads a photo, the model will predict the chances of lesion being melanoma. 
+      The goal of this project is to have the Tech Committee learn about how ML models are made and 
+      how they can be integrated into web applications while also promoting people to take charge in their health and 
+      raise awareness on the dangers of melanoma.`,
+    image: "/images/projects/melanoma_cover.png",
     link: "https://github.com/CareTech-at-UCI/melanoma-project",
     tags: [Tag.openSource, Tag.AI],
   },
