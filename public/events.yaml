@@ -1,3 +1,10 @@
+- name: Image Analysis to Application
+  date: April 21, 2025
+  time: 6:00-7:00PM
+  description: Curious about how AI is transforming healthcare? Join us for a hands-on workshop where we’ll explore how machine learning models analyze medical images like X-rays and skin lesions to make life-saving predictions! 
+  image: /images/meeting_graphics/image_analysis.png
+  alt: Image Analysis Graphic with Robotic Hand
+
 - name: Puzzle Pulse
   date: April 14, 2025
   time: 6:00-7:00PM
