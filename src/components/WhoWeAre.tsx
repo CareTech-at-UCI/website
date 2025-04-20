@@ -4,9 +4,9 @@ const WhoWeAre: React.FC = () => {
   return (
     <section className="bg-white font-jersey p-6 pt-12 mb-11 justify-center min-h-screen w-full">
       <div className="flex-col">
-        <h2 className="text-6xl sm:text-8xl mt-8 sm:pt-20 md:pt-14 pb-2 text-center text-primary">What Is CareTech?</h2>
-        <div className="flex justify-between flex-wrap flex-col lg:px-10 lg:flex-row md:pt-14">
-          <p className="font-normal lg:text-xl md:text-md sm:text-2xl text-[#294B7B] flex-1 w-full">
+        <h2 className="text-6xl sm:text-5xl mt-8 sm:pt-20 md:pt-14 pb-2 text-center text-primary">What Is CareTech?</h2>
+        <div className="flex justify-between  flex-col lg:px-4 lg:flex-row md:pt-16">
+          <p className="font-normal lg:text-xl px-4 pr-0 lg:pr-10 md:text-md sm:[font-size:20px] sm:mb-10 sm:mt-10 text-[#294B7B] flex-1 w-full">
             We are a student-led organization that will collaborate with
             industry-leading companies to{" "}
             <b>bring groundbreaking healthcare inventions to life</b>, get{" "}
@@ -23,8 +23,8 @@ const WhoWeAre: React.FC = () => {
             spot for you!
           </p>
           <img
-            className="md:mt-16 md:mx-32 md:h-25 lg:h-72"
-            src="/images/caretech_nobackg.png"
+            className="mt-6 lg:mt-0 px-4 sm:h-25 lg:h-96"
+            src="/images/celebrate_uci_booth.jpg"
             alt="CareTechAnimal"
           ></img>
         </div>

@@ -28,8 +28,8 @@ const AboutUs: React.FC = () => {
         <div className="flex my-6 md:w-1/2">
             <img 
               className="w-full rounded-xl"
-              src="/images/dna_bubbles.png"
-              alt="DNABubbleImg"></img>
+              src="/images/group_photos/workshop_1.png"
+              alt="Group_Photo"></img>
         </div>
       </div>
     </section>
