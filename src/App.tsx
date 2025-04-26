@@ -6,6 +6,7 @@ import Projects from './pages/Projects';
 import Events from './pages/Events';
 import Resources from './pages/Resources';
 import ContactUs from './pages/ContactUs';
+import { Analytics } from "@vercel/analytics/react"
 
 const App: React.FC = () => {
   return (
@@ -18,6 +19,7 @@ const App: React.FC = () => {
         <Route path="/Resources" element={<Resources />} />
         <Route path="/ContactUs" element={<ContactUs/>} />
       </Routes>
+      <Analytics /> 
     </Router>
   );
 };
