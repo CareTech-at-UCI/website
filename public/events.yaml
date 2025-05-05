@@ -1,3 +1,17 @@
+- name: JeapordAI - Medicine Meets Machine
+  date: May 5, 2025
+  time: 6:00-7:00PM
+  description: Think you know AI? What about the AI in medicine? Put your knowledge to the test AI in Medicine Jeopardy night! This game-style workshop will challenge your brain and spark new insights into how machine learning is revolutionizing healthcare!!!
+  image: /images/meeting_graphics/jeapordai.jpg
+  alt: Blue Background with Random Icons
+  
+- name: Chatbots Uncovered - Prevalence, Impact, and Mechanics!
+  date: April 28, 2025
+  time: 6:00-7:00PM
+  description: Join us for our upcoming workshop exploring the fascinating world of chatbots. Discover how these AI-powered assistants have revolutionized industries, understand their growing impact, and get a behind-the-scenes look at how they function. It's the perfect chance to gain insights into one of today's most influential technologies!
+  image: /images/meeting_graphics/chatbot.png
+  alt: Message Conversation about Chatbot Workshop
+
 - name: Image Analysis to Application
   date: April 21, 2025
   time: 6:00-7:00PM
