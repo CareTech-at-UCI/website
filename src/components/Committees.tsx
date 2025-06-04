@@ -36,7 +36,7 @@ const Committees = () => {
 
   return (
     <div className="min-h-screen w-full bg-gradient-to-r from-black to-[#294B7B] p-4 sm:p-8">
-      <h1 className="text-6xl md:text-8xl mt-4 sm:mt-16 text-white text-center sm:mb-8 font-jersey">
+      <h1 className="md:text-6xl sm:text-5xl mt-4 sm:mt-16 text-white text-center sm:mb-8 font-jersey">
         Committees
       </h1>
       <div className="mx-auto px-4">
@@ -70,11 +70,11 @@ const CommitteeCard = ({
   committee: { icon: JSX.Element; name: string; description: string };
 }) => {
   return (
-    <div className="md:p-5 sm:p-10 mb-2 flex-col sm:flex sm:flex-row justify-items-center sm:items-start max-w-xl">
+    <div className="md:p-10 sm:p-10 mb-2 flex-col sm:flex sm:flex-row justify-items-center sm:items-start max-w-xl">
       <div className="mb-2 sm:mr-4">{committee.icon}</div>
       <div className="flex flex-col sm:text-3xl text-white font-normal text-center sm:text-left">
-        <h2 className="mb-2 text-xl xl:[font-size:26px] md:[font-size:25px] sm:text-3xl font-bold">{committee.name}</h2>
-        <p className="text-base xl:[font-size:25px] md:[font-size:24px] sm:text-3xl">{committee.description}</p>
+        <h2 className="mb-2 text-xl lg:[font-size:22px] md:[font-size:20px] sm:[font-size:18px] font-bold">{committee.name}</h2>
+        <p className="text-base lg:[font-size:19px] md:[font-size:18px] sm:[font-size:16px]">{committee.description}</p>
       </div>
     </div>
   );
