@@ -7,13 +7,13 @@ const WhoWeAre: React.FC = () => {
         <h2 className="text-6xl sm:text-8xl mt-8 sm:pt-20 md:pt-14 pb-2 text-center text-primary">What Is CareTech?</h2>
         <div className="flex justify-between  flex-col lg:px-4 lg:flex-row md:pt-16">
           <p className="font-normal lg:text-xl px-4 pr-0 lg:pr-10 md:text-md sm:[font-size:20px] sm:mb-10 sm:mt-8 text-[#294B7B] flex-1 w-full">
-            We are an ICS-affiliated organization that aims to{" "}
-            <b>bring groundbreaking healthcare inventions to life</b>. Join one of our committees to get{" "}
-            <b>hands-on experience</b> working on side projects and{" "}
+            We are an <b>ICS-affiliated organization</b> that aims to{" "}
+            bring groundbreaking healthcare inventions to life to increase <b>early-disease detection</b>. Join one of our committees to get{" "}
+            <b>hands-on experience</b> working on projects and{" "}
             <b>building healthcare tech innovations</b>. Gain valuable skills about AI in the health and technology field
              and{" "}
             <b>dive into real-world healthcare tech solutions</b> that will help
-            you develop expertise and contribute to cutting-edge projects.
+            you develop expertise and contribute to cutting-edge project.
             <br></br>
             <br></br>
             Whether you're a developer, designer, healthcare enthusiast, or just
