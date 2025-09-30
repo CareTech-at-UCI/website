@@ -12,29 +12,39 @@ const HeroSection: React.FC = () => {
             <h2 className="font-semibold text-2xl md:text-3xl">CareTech at UCI.</h2>
           </div>
           <div className="mt-3 md:mt-5"> 
-            <h1 className="font-semibold text-4xl md:text-7xl md:leading-tight text-center md:text-left">
+            <h1 className="font-semibold md:text-6xl text-2xl md:leading-tight md:text-left text-center ">
             Empowering early disease detection with innovative{' '}
-              <span className="font-jersey text-5xl md:text-7xl">tech </span>
-              <span className="font-semibold text-4xl md:text-7xl">solutions</span>
+              <span className="font-jersey md:text-6xl text-5xl ">tech </span>
+              <span className="font-semibold md:text-6xl text-4xl ">solutions</span>
             </h1>
           </div>     
           <p className="font-normal text-sm md:text-2xl mt-6 text-center md:text-left">
               Student-led Organization at UCI dedicated to creating innovative healthcare apps and tech solutions that can transform the way we approach health.
           </p>
           
-          <p className="flex mt-6 md:mt-11 px-6 md:px-4 py-3 md:py-3 bg-sky-blue font-medium text-lg md:text-lg rounded-sm justify-self-center md:justify-self-start">
-            Applications are now open! Apply here:{' '}
-            <a
-              href="https://forms.gle/yqa9Fg6aAyu8SPSG9"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline text-blue-600"
-            >
-              https://forms.gle/yqa9Fg6aAyu8SPSG9
-            </a>
-          </p>
-
-          
+          <div className="flex-col">
+            <p className="
+                flex flex-wrap
+                mt-6 md:mt-11 
+                px-3 md:px-4 lg:px-6 
+                py-2 md:py-3 
+                bg-sky-blue 
+                font-medium 
+                text-sm sm:text-base md:text-lg lg:text-xl 
+                rounded-sm 
+                text-center md:text-left
+            ">
+              Applications are now open! Apply here:{' '}
+              <a
+                href="https://forms.gle/yqa9Fg6aAyu8SPSG9"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline text-blue-600 break-words ml-1"
+              >
+                https://forms.gle/yqa9Fg6aAyu8SPSG9
+              </a>
+            </p>
+          </div>
         </div>
     </section>
   );
