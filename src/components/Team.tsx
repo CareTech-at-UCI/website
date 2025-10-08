@@ -32,7 +32,7 @@ const Team = () => {
       pronouns: "he/him",
     },
     {
-      image: "/images/board/yurie_jeong.jpg",
+      image: "/images/board/yurie_jeong_tres.jpg",
       firstName: "Yurie",
       lastName: "Jeong",
       title: "Treasurer",
