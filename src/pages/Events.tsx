@@ -101,7 +101,7 @@ const Events: React.FC = () => {
         </h1>
 
         <p className="hidden md:block md:text-center text-xl sm:text-2xl font-montserrat text-primary sm:m-8">
-          We host meetings in <strong>[Room TBA]</strong> on{" "}
+          We host meetings in <strong>DBH 5011</strong> on{" "}
           <strong>Thursdays 5:00-6:00PM</strong>! Meeting and event updates will
           be posted on Discord and Instagram, so be sure to follow us!
         </p>
