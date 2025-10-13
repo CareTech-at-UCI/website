@@ -9,7 +9,7 @@ const Events: React.FC = () => {
           Events
         </h2>
         <p className="font-normal text-sm md:text-2xl text-[#294B7B] mb-2 md:mb-6 text-center">
-          We host events in [Room TBA] on Thursdays 5:00-6:00PM!
+          We host events in DBH 5011 on Thursdays 5:00-6:00PM!
         </p>
         <div className="flex justify-center mb-32">
           <Link
