@@ -34,15 +34,16 @@ const HeroSection: React.FC = () => {
                 rounded-sm 
                 text-center md:text-left
             ">
-              Applications are now open! Apply here:{' '}
+              Applications are now closed! 
+              {/* Apply here:{' '}
               <a
                 href="https://forms.gle/yqa9Fg6aAyu8SPSG9"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="underline text-blue-600 break-words ml-1"
               >
-                https://forms.gle/yqa9Fg6aAyu8SPSG9
-              </a>
+                https://forms.gle/yqa9Fg6aAyu8SPSG9 */}
+              {/* </a> */}
             </p>
           </div>
         </div>
