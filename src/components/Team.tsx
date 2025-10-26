@@ -67,6 +67,13 @@ const Team = () => {
       pronouns: "she/her",
     },
     {
+      image: "/images/board/tba_placeholder.jpg",
+      firstName: "TBA",
+      lastName: "",
+      title: "Software Lead",
+      pronouns: "",
+    },
+    {
       image: "/images/board/zarin_hasan_event.jpg",
       firstName: "Zarin",
       lastName: "Hasan",
@@ -79,13 +86,6 @@ const Team = () => {
       lastName: "Xie",
       title: "Project Head",
       pronouns: "he/him",
-    },
-    {
-      image: "/images/board/tba_placeholder.jpg",
-      firstName: "TBA",
-      lastName: "",
-      title: "Software Lead",
-      pronouns: "",
     },
   ];
 
