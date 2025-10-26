@@ -63,14 +63,14 @@ const Team = () => {
       image: "/images/board/margaret_galvez.jpg",
       firstName: "Margaret",
       lastName: "Galvez",
-      title: "Software Lead",
+      title: "Tech Head",
       pronouns: "she/her",
     },
     {
       image: "/images/board/tba_placeholder.jpg",
       firstName: "TBA",
       lastName: "",
-      title: "Software Lead",
+      title: "Tech Head",
       pronouns: "",
     },
     {
