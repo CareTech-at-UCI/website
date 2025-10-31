@@ -67,11 +67,11 @@ const Team = () => {
       pronouns: "she/her",
     },
     {
-      image: "/images/board/tba_placeholder.jpg",
-      firstName: "TBA",
-      lastName: "",
+      image: "/images/board/leo_siu_tech_head.jpeg",
+      firstName: "Leonardo",
+      lastName: "Siu",
       title: "Tech Head",
-      pronouns: "",
+      pronouns: "he/him",
     },
     {
       image: "/images/board/zarin_hasan_event.jpg",
