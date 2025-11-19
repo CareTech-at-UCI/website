@@ -18,11 +18,11 @@ const Team = () => {
       pronouns: "she/her",
     },
     {
-      image: "/images/board/tba_placeholder.jpg",
-      firstName: "TBA",
-      lastName: "",
+      image: "/images/board/angie_xetey_vp.jpeg",
+      firstName: "Angie",
+      lastName: "Xetey",
       title: "Vice President",
-      pronouns: "",
+      pronouns: "she/her",
     },
     {
       image: "/images/board/edison_secretary.jpg",
@@ -53,11 +53,11 @@ const Team = () => {
       pronouns: "she/her",
     },
     {
-      image: "/images/board/tba_placeholder.jpg",
-      firstName: "TBA",
-      lastName: "",
+      image: "/images/board/genevie_vu_uiux.jpeg",
+      firstName: "Genevie",
+      lastName: "Vu",
       title: "UI/UX & Marketing Head",
-      pronouns: "",
+      pronouns: "she/her",
     },
     {
       image: "/images/board/margaret_galvez.jpg",
