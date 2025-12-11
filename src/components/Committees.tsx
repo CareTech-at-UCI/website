@@ -32,6 +32,12 @@ const Committees = () => {
       description:
         "Engage directly in the design and development process to code cutting-edge applications designed to impact and improve healthcare.",
     },
+    {
+      icon: <Laptop className="w-14 h-14 text-white" />,
+      name: "Tech Committee",
+      description:
+        "Engage directly in the design and development process to code cutting-edge applications designed to impact and improve healthcare.",
+    },
   ];
 
   return (
