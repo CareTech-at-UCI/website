@@ -1,16 +1,16 @@
+export const Tag = {
+  openSource: "Open Source",
+  closedSource: "Closed Source",
+  web: "Web",
+  AI: "AI",
+} as const;
+
 export interface Project {
   title: string;
   description: string;
   image: string;
   link: string;
-  tags?: Tag[];
-}
-
-export enum Tag {
-  openSource = "Open Source",
-  closedSource = "Closed Source",
-  web = "Web",
-  AI = "AI",
+  tags?: string[];
 }
 
 // If the size of the card is bothering us we need to change the image size cap and the text size cap in the card
