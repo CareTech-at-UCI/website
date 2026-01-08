@@ -2,8 +2,8 @@ import React from 'react';
 
 const HeroSection: React.FC = () => {
   return (
-    <section 
-    className="bg-[url('/public/images/dna_strand_mobile.png')] md:bg-[url('/public/images/dnastrand_bkg.png')] 
+    <section
+    className="bg-[url('/images/dna_strand_mobile.png')] md:bg-[url('/images/dnastrand_bkg.png')]
               bg-contain bg-top md:bg-right bg-no-repeat h-auto flex flex-col items-start text-left p-6 md:p-14"
     >
         <div className="sm:h-svh max-w-screen-lg lg:pt-16 md:pt-40 sm:pt-72 pt-60">

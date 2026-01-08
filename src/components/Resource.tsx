@@ -5,17 +5,17 @@ export interface Resource {
     description: string;
     image: string;
     link: string;
-    tags?: Tag[];
+    tags?: (typeof Tag)[keyof typeof Tag][];
 }
   
-export enum Tag {
-    openSource = "Open Source",
-    closedSource = "Closed Source",
-    web = "Web",
-    AI = "AI",
-}
+export const Tag = {
+    openSource: "Open Source",
+    closedSource: "Closed Source",
+    web: "Web",
+    AI: "AI",
+} as const;
 
-function ResourceCard({title, description, image, link, tags}: Resource ) {
+function ResourceCard({ title, description, image, link, tags }: Resource) {
     return (
         <div 
             className={`group flex flex-col rounded-lg w-full sm:w-44 md:w-1/3 lg:w-1/4 aspect-square`} 

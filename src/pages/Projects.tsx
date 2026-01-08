@@ -2,7 +2,7 @@ import DetectScroll from "../components/DetectScroll";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import ProjectCard from "../components/Project";
-import { Project, Tag } from "../components/Project";
+import { type Project, Tag } from "../components/Project";
 
 const projects: Project[] = [
   {
