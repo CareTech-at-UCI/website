@@ -1,4 +1,4 @@
-import React, { JSX } from "react";
+
 
 const Committees = () => {
   const committees = [
