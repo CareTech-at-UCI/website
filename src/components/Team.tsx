@@ -39,11 +39,11 @@ const Team = () => {
       pronouns: "she/her",
     },
     {
-      image: "/images/board/tba_placeholder.jpg",
-      firstName: "TBA",
-      lastName: "",
+      image: "/images/board/rithika_yalla_event.jpg",
+      firstName: "Rithika",
+      lastName: "Yalla",
       title: "Event Head",
-      pronouns: "",
+      pronouns: "she/her",
     },
     {
       image: "/images/board/julia_nguyen.jpg",
@@ -74,7 +74,7 @@ const Team = () => {
       pronouns: "he/him",
     },
     {
-      image: "/images/board/zarin_hasan_event.jpg",
+      image: "/images/board/zarin_hasan_outreach.jpg",
       firstName: "Zarin",
       lastName: "Hasan",
       title: "Outreach Head",
