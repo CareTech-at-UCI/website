@@ -6,11 +6,14 @@ const AboutUs: React.FC = () => {
     <section className="bg-gradient-to-r from-black to-[#294B7B] font-jersey p-12 h-auto">
       <div className="mx-auto grid-cols-1 md:flex md:grid-cols-2 items-center justify-items-center md:justify-between gap-16 h-auto">
         <div className="text-center md:text-left justify-items-center md:justify-items-start flo-row md:flex-col md:w-1/2">
-          <h2 className="text-5xl md:text-6xl font-bold mb-4 text-white">About Us</h2>
-            <p className="font-normal text-sm md:text-2xl text-white">
-            From developing apps that improve patient care to partnering with companies shaping the 
-            future of healthcare, we’re here to make a real difference.
-            </p>
+          <h2 className="text-5xl md:text-6xl font-bold mb-4 text-white">
+            About Us
+          </h2>
+          <p className="font-normal text-sm md:text-2xl text-white">
+            From developing apps that improve patient care to partnering with
+            companies shaping the future of healthcare, we’re here to make a
+            real difference.
+          </p>
           <div className="flex mt-6 gap-2">
             <Link
               to="/About"
@@ -26,10 +29,11 @@ const AboutUs: React.FC = () => {
           </div>
         </div>
         <div className="flex my-6 md:w-1/2">
-            <img 
-              className="w-full rounded-xl"
-              src="/images/group_photos/workshop_1.png"
-              alt="Group_Photo"></img>
+          <img
+            className="w-full rounded-xl"
+            src="/images/group_photos/workshop_1.png"
+            alt="Group_Photo"
+          ></img>
         </div>
       </div>
     </section>

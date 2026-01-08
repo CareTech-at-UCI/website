@@ -157,7 +157,16 @@ const Events: React.FC = () => {
         {viewMode === "list" ? (
           events
             .filter((event) => event.date.includes(monthNames[date.month]) && event.date.includes(date.year.toString()))
-            .map((event) => <EventCard key={event.name} event={event} />)
+            .length > 0 ? (
+            events
+              .filter((event) => event.date.includes(monthNames[date.month]) && event.date.includes(date.year.toString()))
+              .map((event) => <EventCard key={event.name} event={event} />)
+          ) : (
+            <div className="text-center py-16 text-primary font-montserrat">
+              <p className="text-2xl mb-4">No events scheduled for {monthNames[date.month]} {date.year}</p>
+              <p className="text-lg">Check back later or view our calendar!</p>
+            </div>
+          )
           ) : (
           <Calendar
             localizer={localizer}
