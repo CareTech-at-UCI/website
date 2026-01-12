@@ -9,13 +9,16 @@ import moment from "moment";
 import yaml from "js-yaml";
 import "react-big-calendar/lib/css/react-big-calendar.css";
 
-type Event = {
+type RawEvent = {
   date: string;
   time: string;
   name: string;
   description: string;
   image: string;
   alt: string;
+};
+
+type Event = RawEvent & {
   start: Date;
   end: Date;
 };
@@ -34,7 +37,7 @@ const Events: React.FC = () => {
     fetch("/events.yaml")
       .then((response) => response.text())
       .then((text) => {
-        const data = yaml.load(text) as any[];
+        const data = yaml.load(text) as RawEvent[];
         
         const parsedEvents = data.map((event) => {
           const timeParts = event.time.replace(/([APM]+)$/, " $1").split("-"); // add space before AM/PM
@@ -154,7 +157,16 @@ const Events: React.FC = () => {
         {viewMode === "list" ? (
           events
             .filter((event) => event.date.includes(monthNames[date.month]) && event.date.includes(date.year.toString()))
-            .map((event) => <EventCard key={event.name} event={event} />)
+            .length > 0 ? (
+            events
+              .filter((event) => event.date.includes(monthNames[date.month]) && event.date.includes(date.year.toString()))
+              .map((event) => <EventCard key={event.name} event={event} />)
+          ) : (
+            <div className="text-center py-16 text-primary font-montserrat">
+              <p className="text-2xl mb-4">No events scheduled for {monthNames[date.month]} {date.year}</p>
+              <p className="text-lg">Check back later or view our calendar!</p>
+            </div>
+          )
           ) : (
           <Calendar
             localizer={localizer}

@@ -1,4 +1,4 @@
-import React from "react";
+
 import DetectScroll from "../components/DetectScroll";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";

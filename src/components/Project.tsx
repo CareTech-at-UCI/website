@@ -1,16 +1,16 @@
+export const Tag = {
+  openSource: "Open Source",
+  closedSource: "Closed Source",
+  web: "Web",
+  AI: "AI",
+} as const;
+
 export interface Project {
   title: string;
   description: string;
   image: string;
   link: string;
-  tags?: Tag[];
-}
-
-export enum Tag {
-  openSource = "Open Source",
-  closedSource = "Closed Source",
-  web = "Web",
-  AI = "AI",
+  tags?: string[];
 }
 
 // If the size of the card is bothering us we need to change the image size cap and the text size cap in the card
@@ -31,7 +31,7 @@ function ProjectCard({ title, description, image, link, tags }: Project) {
         <img
           src={image}
           alt={title}
-          className="object-cover w-full h-full rounded-lg"
+          className="object-cover w-full rounded-lg aspect-video"
         />
       </div>
       <div className="md:w-2/3 flex flex-col justify-between p-4 text-secondary dark:text-secondary group-hover:text-white transition-colors duration-300">
@@ -65,15 +65,15 @@ function ProjectCard({ title, description, image, link, tags }: Project) {
               );
             })}
           </div>
-          <h2 className="text-xl lg:text-3xl font-bold mb-1 transition-colors duration-300">
+          <h2 className="text-xl lg:text-3xl font-bold mb-1 transition-colors duration-300 group-hover:text-white">
             {title}
           </h2>
-          <p className="text-lg lg:text-xl transition-colors duration-300">
+          <p className="text-lg lg:text-xl transition-colors duration-300 group-hover:text-white">
             {description}
           </p>
         </div>
         <div className="mt-2">
-          <a href={link} className="text-blue-500 flex items-center">
+          <a href={link} className="text-blue-500 flex items-center group-hover:text-[#BEEEFF] transition-colors duration-300">
             Project
             <svg
               viewBox="0 0 24 24"
