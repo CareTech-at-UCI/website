@@ -67,7 +67,7 @@ const Committees = () => {
 const CommitteeCard = ({
   committee,
 }: {
-  committee: { icon: JSX.Element; name: string; description: string };
+  committee: { icon: React.ReactNode; name: string; description: string };
 }) => {
   return (
     <div className="md:p-10 sm:p-10 mb-2 flex-col sm:flex sm:flex-row justify-items-center sm:items-start max-w-xl">
