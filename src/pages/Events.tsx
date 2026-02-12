@@ -16,6 +16,9 @@ type RawEvent = {
   description: string;
   image: string;
   alt: string;
+  location?: string;
+  ctaLabel?: string;
+  ctaLink?: string;
 };
 
 type Event = RawEvent & {
@@ -56,6 +59,9 @@ const Events: React.FC = () => {
             end: endMoment.isValid() ? endMoment.toDate() : new Date(),
             alt: event.alt || "",
             image: event.image || "",
+            location: event.location || "",
+            ctaLabel: event.ctaLabel || "",
+            ctaLink: event.ctaLink || "",
           };
         });
         
@@ -113,7 +119,7 @@ const Events: React.FC = () => {
           <div className="flex flex-grow items-center gap-2 md:gap-4 lg:ml-52 md:ml-20">
             <span>{`${monthNames[date.month]} ${date.year}`}</span>
             <button
-              className={`border border-[#294B7B] text-[#294B7B] text-xs md:text-base p-2 md:px-3 py-1 rounded-full hover:bg-[#294B7B] hover:text-white
+              className={`border border-[#294B7B] text-[#294B7B] text-xs md:text-base p-2 md:px-3 py-1 rounded-full hover:bg-[#294B7B] hover:text-white transition-all duration-200 hover:-translate-y-0.5
               ${
                 viewMode === "list"
                   ? "bg-[#294B7B] text-white"
@@ -124,7 +130,7 @@ const Events: React.FC = () => {
               Featured
             </button>
             <button
-              className={`border border-[#294B7B] text-[#294B7B] text-xs md:text-base p-2 md:px-3 py-1 rounded-full hover:bg-[#294B7B] hover:text-white
+              className={`border border-[#294B7B] text-[#294B7B] text-xs md:text-base p-2 md:px-3 py-1 rounded-full hover:bg-[#294B7B] hover:text-white transition-all duration-200 hover:-translate-y-0.5
               ${
                 viewMode === "calendar"
                   ? "bg-[#294B7B] text-white"
@@ -138,13 +144,13 @@ const Events: React.FC = () => {
 
           <div className="flex gap-2 md:gap-4 md:mr-52">
             <button
-              className="text-xl md:text-2xl text-[#183054] hover:text-gray-500"
+              className="text-xl md:text-2xl text-[#183054] hover:text-gray-500 hover:-translate-x-0.5 transition-all duration-200"
               onClick={handlePrevMonth}
             >
               {"<"}
             </button>
             <button
-              className="text-xl md:text-2xl text-[#183054] hover:text-gray-500"
+              className="text-xl md:text-2xl text-[#183054] hover:text-gray-500 hover:translate-x-0.5 transition-all duration-200"
               onClick={handleNextMonth}
             >
               {">"}

@@ -23,28 +23,26 @@ const HeroSection: React.FC = () => {
           </p>
           
           <div className="flex-col">
-            <p className="
-                flex flex-wrap
-                mt-6 md:mt-11 
-                px-3 md:px-4 lg:px-6 
-                py-2 md:py-3 
-                bg-sky-blue 
-                font-medium 
-                text-sm sm:text-base md:text-lg lg:text-xl 
-                rounded-sm 
+            <a
+              href="https://forms.gle/xFcvPEBqBwThGBLr6"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="
+                inline-flex flex-wrap
+                mt-6 md:mt-11
+                px-3 md:px-4 lg:px-6
+                py-2 md:py-3
+                bg-sky-blue
+                font-medium
+                text-sm sm:text-base md:text-lg lg:text-xl
+                rounded-sm
                 text-center md:text-left
-            ">
-              Applications are now closed! 
-              {/* Apply here:{' '}
-              <a
-                href="https://forms.gle/yqa9Fg6aAyu8SPSG9"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="underline text-blue-600 break-words ml-1"
-              >
-                https://forms.gle/yqa9Fg6aAyu8SPSG9 */}
-              {/* </a> */}
-            </p>
+                hover:opacity-90 hover:-translate-y-0.5 active:translate-y-0
+                transition-all duration-200
+              "
+            >
+              Apply to the AI x Healthcare Hackathon
+            </a>
           </div>
         </div>
     </section>
