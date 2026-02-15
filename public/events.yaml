@@ -1,3 +1,13 @@
+- name: AI x Healthcare Hackathon
+  date: February 21, 2026
+  time: 12:00 PM-7:00 PM
+  location: DBH 6011
+  description: Want to build your own project at the intersection of health and tech in one day? Join our AI x Healthcare Hackathon to present your project, compete for prizes, and explore responsible AI with a fun coding vibe.
+  image: /images/ai_hackathon.png
+  alt: CareTech AI x Healthcare Hackathon event flyer
+  ctaLabel: Apply Now
+  ctaLink: https://forms.gle/xFcvPEBqBwThGBLr6
+
 - name: JeapordAI - Medicine Meets Machine
   date: May 5, 2025
   time: 6:00-7:00PM
