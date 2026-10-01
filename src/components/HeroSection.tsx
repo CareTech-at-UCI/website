@@ -24,7 +24,7 @@ const HeroSection: React.FC = () => {
           
           <div className="flex-col">
             <a
-              href="https://forms.gle/xFcvPEBqBwThGBLr6"
+              href="https://forms.gle/e8NMLTXL6UsBBcgy7"
               target="_blank"
               rel="noopener noreferrer"
               className="
@@ -41,7 +41,7 @@ const HeroSection: React.FC = () => {
                 transition-all duration-200
               "
             >
-              Apply to the AI x Healthcare Hackathon
+              Apply to be part of our team!
             </a>
           </div>
         </div>
