@@ -79,3 +79,10 @@
   image: /images/meeting_graphics/general_meeting_1.png
   alt: Introductory Meeting Graphic
 
+- date: "October 1, 2026"
+  time: "6:00 PM - 7:00 PM"
+  name: "CareTech Meet the Club"  
+  description: "Meet the team, learn about our application process, and find out how to get involved!"
+  image: "/images/meeting_graphics/CareTech_Meet_the_Club.png"
+  alt: "CareTech meet the club flyer"
+  location: "DBH 6011"
