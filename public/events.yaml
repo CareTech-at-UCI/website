@@ -86,3 +86,5 @@
   image: "/images/meeting_graphics/CareTech_Meet_the_Club.png"
   alt: "CareTech meet the club flyer"
   location: "DBH 6011"
+  ctaLabel: Apply to be a member
+  ctaLink: https://forms.gle/k8G8a3UQ7tQB8e7V7
