@@ -10,19 +10,19 @@ const Committees = () => {
     },
     {
       icon: <Palette className="w-14 h-14 text-white" />,
-      name: "Marketing Committee",
+      name: "UI/UX & Marketing Committee",
       description:
-        "Design campaigns and posts alongside running our socials to inform, inspire, and attract people to our healthcare solutions.",
+        "Design healthcare projects alongside running our socials to inform, inspire, and attract people to our healthcare solutions.",
     },
     {
       icon: <Globe className="w-14 h-14 text-white" />,
-      name: "Outreach Committee",
+      name: "Corporate Outreach Committee",
       description:
         "Secure meaningful collaborations with tech companies and health organizations alongside bringing our apps to those who need them the most.",
     },
     {
       icon: <ChartBar className="w-14 h-14 text-white" />,
-      name: "Project Committee",
+      name: "Research Committee",
       description:
         "Brainstorm and shape the next big projects that drive our work through conducting research and turning our ideas into real world projects that companies and the public would be interested in.",
     },
